@@ -1,4 +1,4 @@
-import bgimg from '../../assets/images/else/bgimg.jpg';
+import bgImage from '../../assets/images/else/bgimg.jpg';
 
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
@@ -8,7 +8,10 @@ function Home() {
   return (
     <div className="bg-gray-900">
       <NavBar />
-      <div className="myBackgroundImage isolate pt-14">
+      <div
+        style={{ backgroundImage: `url(${bgImage})` }}
+        className="myBackgroundImage isolate pt-14"
+      >
         <div className="absolute inset-0 object-cover w-full h-full bg-black bg-opacity-50 -z-10"></div>
 
         {
