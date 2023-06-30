@@ -25,11 +25,11 @@ function Home() {
           ></div>
         }
 
-        <div className="max-w-2xl pt-64 mx-auto sm:py-48 lg:py-56">
+        <div className="max-w-2xl pt-32 mx-auto sm:py-48 lg:py-56">
           <div className="text-center ">
             <a href="#" className="">
               <span className="sr-only">Your Company</span>
-              <img className="h-24 mx-auto mb-20" src={logo} alt="" />
+              <img className="h-16 mx-auto mb-20 lg:h-24" src={logo} alt="" />
             </a>
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
               Expert Barbers, Exceptional Results
