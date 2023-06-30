@@ -8,12 +8,7 @@ function Home() {
   return (
     <div className="bg-gray-900">
       <NavBar />
-      <div
-        className="relative overflow-hidden bg-fixed bg-center bg-no-repeat bg-cover md:bg-right-top isolate pt-14"
-        style={{
-          backgroundImage: `url(${bgimg})`,
-        }}
-      >
+      <div className="relative overflow-hidden bg-fixed bg-barber-bg bg-no-repeat bg-right-10 bg-bottom-10 bg-100% md:bg-cover isolate pt-14">
         <div className="absolute inset-0 object-cover w-full h-full bg-black bg-opacity-50 -z-10"></div>
 
         {
