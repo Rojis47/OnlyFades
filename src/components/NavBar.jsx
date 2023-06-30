@@ -14,7 +14,7 @@ const navigation = [
 function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <header className="absolute inset-x-0 top-0 z-50">
+    <header className="absolute inset-x-0 z-50 top-5">
       <nav
         className="flex items-center justify-around lg:px-8"
         aria-label="Global"
@@ -22,7 +22,7 @@ function NavBar() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img className="w-auto h-40" src={logo} alt="" />
+            <img className="w-auto h-20" src={logo} alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -35,7 +35,7 @@ function NavBar() {
             <Bars3Icon className="w-6 h-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden mt-2 lg:flex lg:gap-x-12">
           {navigation.map((item) => (
             <a
               key={item.name}

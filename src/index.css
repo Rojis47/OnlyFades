@@ -13,19 +13,5 @@ body > #root > div {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-}
-
-@media (min-width: 640px) {
-  /* sm */
-  .myBackgroundImage {
-    height: 75vh;
-  }
-}
-
-@media (min-width: 768px) {
-  /* md */
-  .myBackgroundImage {
-    height: 50vh;
-  }
+  height: 75vh;
 }
