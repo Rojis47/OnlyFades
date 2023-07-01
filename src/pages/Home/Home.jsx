@@ -1,6 +1,7 @@
 import bgImage from '../../assets/images/else/bgimg.jpg';
 
 import NavBar from '../../components/NavBar';
+import Contact from './Contact';
 import Footer from '../../components/Footer';
 import Barbers from './Barbers';
 import logo from '../../assets/logo/OnlyFades.png';
@@ -50,6 +51,7 @@ function Home() {
         </div>
       </div>
       <Barbers />
+      <Contact />
       <Footer />
     </div>
   );
