@@ -1,9 +1,11 @@
+import { HashLink as Link } from 'react-router-hash-link';
+
 const navigation = {
   main: [
-    { name: 'Barbers', href: '#' },
+    { name: 'Barbers', href: '#Barbers' },
     { name: 'Features', href: '#' },
     { name: 'About Us', href: '#' },
-    { name: 'Contact Us', href: '#' },
+    { name: 'Contact Us', href: '#Contact' },
   ],
   social: [
     {
@@ -45,12 +47,13 @@ export default function Footer() {
         >
           {navigation.main.map((item) => (
             <div key={item.name} className="pb-6">
-              <a
-                href={item.href}
+              <Link
+                smooth
+                to={item.href}
                 className="font-medium leading-6 text-white duration-300 ease-in-out hover:text-blue-500 text-xlg"
               >
                 {item.name}
-              </a>
+              </Link>
             </div>
           ))}
         </nav>
