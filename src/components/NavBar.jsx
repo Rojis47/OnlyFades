@@ -2,13 +2,16 @@ import React, { useState } from 'react';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
+import { BrowserRouter } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+
 import logo from '../assets/logo/OnlyFades.png';
 
 const navigation = [
-  { name: 'Barbers', href: '#' },
+  { name: 'Barbers', href: '#Barbers' },
   { name: 'Features', href: '#' },
   { name: 'About Us', href: '#' },
-  { name: 'Contact Us', href: '#' },
+  { name: 'Contact Us', href: '#Contact' },
 ];
 
 function NavBar() {
@@ -31,13 +34,11 @@ function NavBar() {
         </div>
         <div className="hidden mt-2 lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-sm font-semibold leading-6 text-white duration-300 ease-in-out hover:text-blue-500"
-            >
-              {item.name}
-            </a>
+            <Link key={item.name} smooth to={item.href}>
+              <a className="text-sm font-semibold leading-6 text-white duration-300 ease-in-out hover:text-blue-500">
+                {item.name}
+              </a>
+            </Link>
           ))}
         </div>
       </nav>

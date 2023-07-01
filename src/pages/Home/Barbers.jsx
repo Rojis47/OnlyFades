@@ -67,7 +67,10 @@ const barbers = [
 
 export default function Barbers() {
   return (
-    <div className="py-24 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black sm:py-32">
+    <div
+      id="Barbers"
+      className="py-24 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black sm:py-32"
+    >
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
