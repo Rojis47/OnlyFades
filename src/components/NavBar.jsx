@@ -33,11 +33,14 @@ function NavBar() {
           </button>
         </div>
         <div className="hidden mt-2 lg:flex lg:gap-x-12">
-          {navigation.map((item) => (
-            <Link key={item.name} smooth to={item.href}>
-              <a className="text-sm font-semibold leading-6 text-white duration-300 ease-in-out hover:text-blue-500">
-                {item.name}
-              </a>
+          {navigation.map((item, i) => (
+            <Link
+              className="text-sm font-semibold leading-6 text-white duration-300 ease-in-out hover:text-blue-500"
+              key={i}
+              smooth
+              to={item.href}
+            >
+              {item.name}
             </Link>
           ))}
         </div>
@@ -51,10 +54,10 @@ function NavBar() {
         <div className="fixed inset-0 z-50" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-gradient-to-b to-black from-cyan-900 sm:max-w-sm sm:ring-1 sm:ring-white/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <div className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img className="w-auto h-10" src={logo} alt="" />
-            </a>
+            </div>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-400"
@@ -67,15 +70,16 @@ function NavBar() {
           <div className="flow-root mt-6">
             <div className="-my-6 text-center divide-y divide-gray-500/25">
               <div className="py-6 space-y-2">
-                {navigation.map((item) => (
-                  <a
+                {navigation.map((item, i) => (
+                  <Link
                     onClick={() => setMobileMenuOpen(false)}
-                    key={item.name}
-                    href={item.href}
+                    smooth
+                    key={i}
+                    to={item.href}
                     className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-white rounded-lg hover:bg-gray-800"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

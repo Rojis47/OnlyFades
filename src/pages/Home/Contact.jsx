@@ -151,8 +151,8 @@ function Contact() {
               </div>
               <div className="flex justify-end mt-8">
                 <button
+                  className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-black transition-all duration-200 ease-in bg-white rounded-full hover:bg-black hover:text-white"
                   type="submit"
-                  className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                 >
                   Send message
                 </button>

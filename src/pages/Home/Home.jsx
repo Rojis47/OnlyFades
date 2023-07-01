@@ -32,10 +32,10 @@ function Home() {
 
           <div className="max-w-2xl pt-32 mx-auto sm:py-48 lg:py-56">
             <div className="text-center ">
-              <a href="#" className="">
+              <Link href="#" className="">
                 <span className="sr-only">Your Company</span>
                 <img className="h-16 mx-auto mb-20 lg:h-24" src={logo} alt="" />
-              </a>
+              </Link>
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
                 Expert Barbers, Exceptional Results
               </h1>
@@ -44,13 +44,12 @@ function Home() {
                 fresh approach to men's grooming.
               </p>
               <div className="flex flex-col items-center justify-center px-2 mt-10 gap-x-6">
-                <Link to="#Barbers" smooth>
-                  <a
-                    href="#"
-                    className="grid w-48 px-4 py-2 font-semibold leading-6 text-black transition-all duration-200 ease-in bg-white border border-white rounded-full text-xlg place-content-center hover:bg-black hover:border-black hover:text-white"
-                  >
-                    Book Now
-                  </a>
+                <Link
+                  to="#Barbers"
+                  className="grid w-48 px-4 py-2 font-semibold leading-6 text-black transition-all duration-200 ease-in bg-white border border-white rounded-full text-xlg place-content-center hover:bg-black hover:border-black hover:text-white"
+                  smooth
+                >
+                  Book Now
                 </Link>
               </div>
             </div>
