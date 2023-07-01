@@ -69,6 +69,7 @@ function NavBar() {
               <div className="py-6 space-y-2">
                 {navigation.map((item) => (
                   <a
+                    onClick={() => setMobileMenuOpen(false)}
                     key={item.name}
                     href={item.href}
                     className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-white rounded-lg hover:bg-gray-800"
