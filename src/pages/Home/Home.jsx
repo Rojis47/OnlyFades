@@ -12,6 +12,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 function Home() {
   return (
     <BrowserRouter>
+      <div></div>
       <div className="bg-gray-900 ">
         <NavBar />
         <div
