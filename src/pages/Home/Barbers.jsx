@@ -1,73 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import ImageGallery from '../../components/ImageGallery';
-
-const barbers = [
-  {
-    name: 'Name',
-    role: 'Barber',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bookUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Name',
-    role: 'Barber',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bookUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Name',
-    role: 'Barber',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bookUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Name',
-    role: 'Barber',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bookUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Name',
-    role: 'Barber',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bookUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Name',
-    role: 'Barber',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bookUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Name',
-    role: 'Barber',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bookUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Leonard Krasner',
-    role: 'barber',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bookUrl: '#',
-    linkedinUrl: '#',
-  },
-];
+import barbers from '../../components/picImports';
 
 export default function Barbers() {
   const [viewedImage, setViewedImage] = useState(null);
@@ -90,49 +24,69 @@ export default function Barbers() {
         >
           {barbers.map((barber, i) => (
             <li key={i}>
-              <img
-                className="aspect-[14/13] w-full rounded-2xl object-cover cursor-pointer"
-                src={barber.imageUrl}
-                alt=""
-                onClick={() => setViewedImage(i)}
-              />
-              <ImageGallery
-                open={viewedImage === i}
-                setOpen={() => setViewedImage(null)}
-              />
               <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">
                 {barber.name}
               </h3>
-              <p className="text-base leading-7 text-gray-300">{barber.role}</p>
-              <p className="text-sm leading-6 text-gray-500">
-                {barber.location}
-                {
-                  <Link
-                    href={barber.bookUrl}
-                    className="text-gray-400 hover:text-gray-300"
-                  >
-                    <span className="sr-only">Book</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="currentColor"
-                      className="w-6 h-6"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
-                      />
-                    </svg>
-                  </Link>
-                }
-              </p>
+
+              <div className="overflow-hidden bg-blue-500 rounded-xl ">
+                <div className="overflow-hidden ">
+                  <img
+                    className="aspect-[14/13] w-full drop-shadow-3xl hover:scale-110 transition duration-500 cursor-pointer object-cover"
+                    src={barber.imageUrl}
+                    alt=""
+                    onClick={() => setViewedImage(i)}
+                  />
+                </div>
+              </div>
+
+              <ImageGallery
+                open={viewedImage === i}
+                setOpen={() => setViewedImage(null)}
+                barber={barber}
+              />
+
+              <Link
+                to={barber.bookUrl}
+                className="flex justify-center w-1/2 gap-3 py-2 m-auto mt-5 font-semibold leading-6 text-center text-black align-middle transition-all duration-200 ease-in bg-white border border-white rounded-full text-xlg place-content-center hover:bg-black hover:border-black hover:text-white"
+                smooth
+              >
+                Book
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                  />
+                </svg>
+              </Link>
             </li>
           ))}
         </ul>
       </div>
     </div>
   );
+}
+
+{
+  /* <svg
+xmlns="http://www.w3.org/2000/svg"
+fill="none"
+viewBox="0 0 24 24"
+strokeWidth="1.5"
+stroke="currentColor"
+className="w-6 h-6"
+>
+<path
+  strokeLinecap="round"
+  strokeLinejoin="round"
+  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+/>
+</svg> */
 }

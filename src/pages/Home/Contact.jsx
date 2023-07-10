@@ -1,4 +1,5 @@
 import React from 'react';
+import MapComponent from '../../components/MapComponent';
 import {
   BuildingOffice2Icon,
   EnvelopeIcon,
@@ -71,10 +72,14 @@ function Contact() {
               Ready for the ultimate fade experience?
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Drop us a line at OnlyFades - where style meets precision in the
-              most relaxed vibes. Whether you want to book an appointment or
-              just talk about your next hair adventure, we're here to chat.
-              Reach out now and let's shape your fresh look together.
+              Welcome to OnlyFades, where style meets precision in the most
+              relaxed vibes. Whether you're looking for a fresh cut or a whole
+              new look, we're ready to bring your vision to life.
+            </p>
+            <p className="mt-4 text-lg leading-8 text-gray-300">
+              Ready to book your appointment or just want to chat about your
+              next hair adventure? Don't hesitate to reach out. We're excited to
+              shape your fresh look together.
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-300">
               {contactInfo.map((item, index) => (
@@ -106,60 +111,10 @@ function Contact() {
           </div>
         </div>
         <div className="relative px-6 pt-24 pb-20 sm:pt-32 lg:static lg:px-8 lg:py-48">
-          <form action="#" method="POST">
-            <div className="max-w-xl mx-auto lg:mr-0 lg:max-w-lg">
-              <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-                {formFields.map((input) => (
-                  <Input
-                    key={input.id}
-                    id={input.id}
-                    label={input.label}
-                    type={input.type}
-                    autoComplete={input.autoComplete}
-                  />
-                ))}
-              </div>
-              <div className="flex justify-end mt-8">
-                <button
-                  className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-black transition-all duration-200 ease-in bg-white rounded-full hover:bg-black hover:text-white"
-                  type="submit"
-                >
-                  Send message
-                </button>
-              </div>
-            </div>
-          </form>
+          <div className="max-w-xl mx-auto lg:mr-0 lg:max-w-lg">
+            <MapComponent />
+          </div>
         </div>
-      </div>
-    </div>
-  );
-}
-
-function Input({ id, label, type, autoComplete }) {
-  return (
-    <div className={type === 'textarea' ? 'sm:col-span-2' : ''}>
-      <label
-        htmlFor={id}
-        className="block text-sm font-semibold leading-6 text-white"
-      >
-        {label}
-      </label>
-      <div className="mt-2.5">
-        {type === 'textarea' ? (
-          <textarea
-            id={id}
-            autoComplete={autoComplete}
-            rows={4}
-            className="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
-          />
-        ) : (
-          <input
-            type={type}
-            id={id}
-            autoComplete={autoComplete}
-            className="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
-          />
-        )}
       </div>
     </div>
   );

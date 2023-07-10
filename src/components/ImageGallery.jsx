@@ -1,9 +1,12 @@
 import { Fragment, useRef, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import { CheckIcon } from '@heroicons/react/24/outline';
-import jonathanPics from './picImports';
+import {
+  ExclamationTriangleIcon,
+  XMarkIcon,
+} from '@heroicons/react/24/outline';
+import LazyLoad from 'react-lazy-load';
 
-function ImageGallery({ open, setOpen }) {
+function ImageGallery({ open, setOpen, barber }) {
   const cancelButtonRef = useRef(null);
 
   return (
@@ -23,7 +26,7 @@ function ImageGallery({ open, setOpen }) {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-75" />
+          <div className="fixed inset-0 transition-opacity bg-black bg-opacity-75" />
         </Transition.Child>
 
         <div className="fixed inset-0 z-10 overflow-y-auto">
@@ -39,26 +42,32 @@ function ImageGallery({ open, setOpen }) {
             >
               <Dialog.Panel
                 style={{ width: '75vw' }}
-                className="relative px-4 pt-5 pb-4 overflow-hidden text-left transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:p-6"
+                className="relative px-4 pb-4 overflow-hidden text-left transition-all transform bg-white rounded-lg shadow-xl bg-opacity-90 drop-shadow-2xl sm:my-8 sm:p-6"
               >
-                <div className="py-24 bg-gray-900 sm:py-32">
-                  <div className="px-6 mx-auto max-w-7xl lg:px-8">
-                    <ul
-                      role="list"
-                      className="grid max-w-2xl grid-cols-1 mx-auto mt-20 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
-                    >
-                      {jonathanPics.map((img, index) => {
-                        return (
-                          <img
-                            key={index}
-                            src={img}
-                            alt={`Jonathan Pic ${index + 1}`}
-                            className="object-cover w-full h-48 rounded-lg"
-                          />
-                        );
-                      })}
-                    </ul>
-                  </div>
+                <div className="absolute top-0 right-0 block pt-4 pr-4 sm:block">
+                  <button
+                    type="button"
+                    className="text-gray-400 bg-white rounded-md hover:text-gray-500"
+                    onClick={() => setOpen(false)}
+                  >
+                    <XMarkIcon className="w-6 h-6" />
+                  </button>
+                </div>
+                <div className="px-6 mx-auto max-w-7xl lg:px-8">
+                  <ul
+                    role="list"
+                    className="grid max-w-2xl grid-cols-1 mx-auto my-20 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
+                  >
+                    {barber.pics.map((image, i) => (
+                      <LazyLoad key={i}>
+                        <img
+                          src={image}
+                          alt={`Image ${i + 1} for ${barber.name}`}
+                          className="object-cover w-full h-48 rounded-lg drop-shadow-3xl"
+                        />
+                      </LazyLoad>
+                    ))}
+                  </ul>
                 </div>
               </Dialog.Panel>
             </Transition.Child>
@@ -70,35 +79,3 @@ function ImageGallery({ open, setOpen }) {
 }
 
 export default ImageGallery;
-
-{
-  /* <section id="gallery">
-<div className="container">
-  <div id="image-gallery">
-    <div className="row">
-      <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-        <div className="img-wrapper">
-          {jonathanPics.map((img, index) => {
-            return (
-              <img
-                key={index}
-                src={img}
-                alt={`Jonathan Pic ${index + 1}`}
-                className=""
-              />
-            );
-          })}
-
-          <div className="img-overlay">
-            <i
-              className="fa fa-plus-circle"
-              aria-hidden="true"
-            ></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section> */
-}
