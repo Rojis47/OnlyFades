@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import ImageGallery from '../../components/ImageGallery';
 
 const barbers = [
   {
@@ -68,11 +70,10 @@ const barbers = [
 ];
 
 export default function Barbers() {
+  const [viewedImage, setViewedImage] = useState(null);
+
   return (
-    <div
-      id="Barbers"
-      className="py-24 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black sm:py-32"
-    >
+    <div id="Barbers" className="py-24 ">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -90,9 +91,14 @@ export default function Barbers() {
           {barbers.map((barber, i) => (
             <li key={i}>
               <img
-                className="aspect-[14/13] w-full rounded-2xl object-cover"
+                className="aspect-[14/13] w-full rounded-2xl object-cover cursor-pointer"
                 src={barber.imageUrl}
                 alt=""
+                onClick={() => setViewedImage(i)}
+              />
+              <ImageGallery
+                open={viewedImage === i}
+                setOpen={() => setViewedImage(null)}
               />
               <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">
                 {barber.name}

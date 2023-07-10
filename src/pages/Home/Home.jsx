@@ -12,7 +12,6 @@ import { HashLink as Link } from 'react-router-hash-link';
 function Home() {
   return (
     <BrowserRouter>
-      <div></div>
       <div className="bg-gray-900 ">
         <NavBar />
         <div
@@ -56,9 +55,11 @@ function Home() {
             </div>
           </div>
         </div>
-        <Barbers />
-        <Contact />
-        <Footer />
+        <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
+          <Barbers />
+          <Contact />
+          <Footer />
+        </div>
       </div>
     </BrowserRouter>
   );
