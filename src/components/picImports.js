@@ -23,6 +23,21 @@ const jonathanPics = [
   jonathanPic10,
 ];
 
+import rubenPic1 from '../assets/images/ruben/ruben_pics (1).jpg';
+import rubenPic2 from '../assets/images/ruben/ruben_pics (2).jpg';
+import rubenPic3 from '../assets/images/ruben/ruben_pics (3).jpg';
+import rubenPic4 from '../assets/images/ruben/ruben_pics (4).jpg';
+import rubenPic5 from '../assets/images/ruben/ruben_pics (5).jpg';
+import rubenPic6 from '../assets/images/ruben/ruben_pics (6).jpg';
+const rubenPics = [
+  rubenPic1,
+  rubenPic2,
+  rubenPic3,
+  rubenPic4,
+  rubenPic5,
+  rubenPic6,
+];
+
 import mehdiLogo from '../assets/images/mehdi/mehdi_logo.jpg';
 
 import mehdiPic1 from '../assets/images/mehdi/mehdi_pics (1).jpg';
@@ -58,8 +73,6 @@ const zayPics = [
   zayPic7,
   zayPic8,
 ];
-
-// import marcosLogo from '../assets/images/marcos/marcos_Logo.jpeg';
 
 import marcosLogo from '../assets/images/marcos/marcos_logo.jpg';
 
@@ -107,6 +120,15 @@ const angelPics = [
 ];
 
 const barbers = [
+  {
+    name: 'RubenCutz',
+    role: 'Barber',
+    imageUrl: rubenPic1,
+    bookUrl:
+      'https://booksy.com/en-us/19778_ruben-cutz_barber-shop_37616_round-rock#ba_s=vl_1',
+    linkedinUrl: '#',
+    pics: rubenPics,
+  },
   {
     name: 'Marcos',
     role: 'Barber',
