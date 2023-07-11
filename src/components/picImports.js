@@ -61,6 +61,8 @@ const zayPics = [
 
 // import marcosLogo from '../assets/images/marcos/marcos_Logo.jpeg';
 
+import marcosLogo from '../assets/images/marcos/marcos_logo.jpg';
+
 import marcosPic1 from '../assets/images/marcos/marcos_pics (1).jpg';
 import marcosPic2 from '../assets/images/marcos/marcos_pics (2).jpg';
 import marcosPic3 from '../assets/images/marcos/marcos_pics (3).jpg';
@@ -108,7 +110,7 @@ const barbers = [
   {
     name: 'Marcos',
     role: 'Barber',
-    imageUrl: marcosPic1,
+    imageUrl: marcosLogo,
     bookUrl:
       'https://booksy.com/en-us/28523_marcuts-the-barber_barber-shop_37616_round-rock#ba_s=hgr_1',
     linkedinUrl: '#',
