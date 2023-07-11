@@ -87,7 +87,7 @@ import rubyPic6 from '../assets/images/ruby/ruby_pics (6).jpg';
 
 const rubyPics = [rubyPic1, rubyPic2, rubyPic3, rubyPic4, rubyPic5, rubyPic6];
 
-import angelLogo from '../assets/images/angel/angel_Logo.jpg';
+import angelLogo from '../assets/images/angel/angel_logo.jpg';
 
 import angelPic1 from '../assets/images/angel/angel_pics (1).jpg';
 import angelPic2 from '../assets/images/angel/angel_pics (2).jpg';

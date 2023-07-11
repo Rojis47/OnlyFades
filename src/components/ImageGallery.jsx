@@ -60,11 +60,16 @@ function ImageGallery({ open, setOpen, barber }) {
                   >
                     {barber.pics.map((image, i) => (
                       <LazyLoad key={i}>
-                        <img
-                          src={image}
-                          alt={`Image ${i + 1} for ${barber.name}`}
-                          className="object-cover w-full h-48 rounded-lg drop-shadow-3xl"
-                        />
+                        <div className="overflow-hidden rounded-xl ">
+                          <div className="overflow-hidden ">
+                            <img
+                              loading="lazy"
+                              src={image}
+                              alt={`Image ${i + 1} for ${barber.name}`}
+                              className="aspect-[14/13] w-full drop-shadow-3xl hover:scale-110 transition duration-500 cursor-pointer object-cover"
+                            />
+                          </div>
+                        </div>
                       </LazyLoad>
                     ))}
                   </ul>
