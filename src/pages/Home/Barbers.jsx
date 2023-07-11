@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import ImageGallery from '../../components/ImageGallery';
 import barbers from '../../components/picImports';
+import ImageCard from '../../components/ImageCard';
 
 export default function Barbers() {
   const [viewedImage, setViewedImage] = useState(null);
@@ -28,16 +29,11 @@ export default function Barbers() {
                 {barber.name}
               </h3>
 
-              <div className="overflow-hidden bg-gray-500 rounded-xl ">
-                <div className="overflow-hidden ">
-                  <img
-                    className="aspect-[14/13] w-full drop-shadow-3xl hover:scale-110 transition duration-500 cursor-pointer object-cover"
-                    src={barber.imageUrl}
-                    alt=""
-                    onClick={() => setViewedImage(i)}
-                  />
-                </div>
-              </div>
+              <ImageCard
+                barber={barber}
+                setViewedImage={setViewedImage}
+                index={i}
+              />
 
               <ImageGallery
                 open={viewedImage === i}
@@ -48,7 +44,7 @@ export default function Barbers() {
               <Link
                 to={barber.bookUrl}
                 className="flex justify-center w-1/2 gap-3 py-2 m-auto mt-5 font-semibold leading-6 text-center text-black align-middle transition-all duration-200 ease-in bg-white border border-white rounded-full text-xlg place-content-center hover:bg-black hover:border-black hover:text-white"
-                smooth
+                smooth="true"
               >
                 Book
                 <svg

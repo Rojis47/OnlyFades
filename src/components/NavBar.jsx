@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { HashLink as Link } from 'react-router-hash-link';
@@ -35,7 +35,7 @@ function NavBar() {
             <Link
               className="text-sm font-semibold leading-6 text-white duration-300 ease-in-out hover:text-blue-500"
               key={i}
-              smooth
+              smooth="true"
               to={item.href}
             >
               {item.name}
@@ -71,7 +71,7 @@ function NavBar() {
                 {navigation.map((item, i) => (
                   <Link
                     onClick={() => setMobileMenuOpen(false)}
-                    smooth
+                    smooth="true"
                     key={i}
                     to={item.href}
                     className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-white rounded-lg hover:bg-gray-800"

@@ -1,10 +1,7 @@
-import { Fragment, useRef, useState } from 'react';
+import { Fragment, useRef } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import {
-  ExclamationTriangleIcon,
-  XMarkIcon,
-} from '@heroicons/react/24/outline';
-import LazyLoad from 'react-lazy-load';
+import GalleryImageCard from './GalleryImageCard';
+import { XMarkIcon } from '@heroicons/react/24/outline';
 
 function ImageGallery({ open, setOpen, barber }) {
   const cancelButtonRef = useRef(null);
@@ -59,18 +56,12 @@ function ImageGallery({ open, setOpen, barber }) {
                     className="grid max-w-2xl grid-cols-1 mx-auto my-20 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
                   >
                     {barber.pics.map((image, i) => (
-                      // <LazyLoad >
-                      <div key={i} className="overflow-hidden rounded-xl ">
-                        <div className="overflow-hidden ">
-                          <img
-                            loading="lazy"
-                            src={image}
-                            alt={`Image ${i + 1} for ${barber.name}`}
-                            className="aspect-[14/13] w-full drop-shadow-3xl hover:scale-110 transition duration-500 cursor-pointer object-cover"
-                          />
-                        </div>
-                      </div>
-                      // </LazyLoad>
+                      <GalleryImageCard
+                        key={i}
+                        image={image}
+                        alt={`Image ${i + 1} for ${barber.name}`}
+                        index={i}
+                      />
                     ))}
                   </ul>
                 </div>

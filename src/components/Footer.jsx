@@ -48,7 +48,7 @@ export default function Footer() {
           {navigation.main.map((item) => (
             <div key={item.name} className="pb-6">
               <Link
-                smooth
+                smooth="true"
                 to={item.href}
                 className="font-medium leading-6 text-white duration-300 ease-in-out hover:text-blue-500 text-xlg"
               >
