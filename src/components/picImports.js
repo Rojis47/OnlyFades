@@ -1,4 +1,4 @@
-import jonathanLogo from '../assets/images/jonathan/jonathan_logo.jpeg';
+import jonathanLogo from '../assets/images/jonathan/jonathan_logo.jpg';
 
 import jonathanPic1 from '../assets/images/jonathan/jonathan_pics (1).jpg';
 import jonathanPic2 from '../assets/images/jonathan/jonathan_pics (2).jpg';
@@ -23,7 +23,7 @@ const jonathanPics = [
   jonathanPic10,
 ];
 
-import mehdiLogo from '../assets/images/mehdi/mehdi_logo.jpeg';
+import mehdiLogo from '../assets/images/mehdi/mehdi_logo.jpg';
 
 import mehdiPic1 from '../assets/images/mehdi/mehdi_pics (1).jpg';
 import mehdiPic2 from '../assets/images/mehdi/mehdi_pics (2).jpg';
@@ -76,7 +76,7 @@ const marcosPics = [
   marcosPic6,
 ];
 
-import rubyLogo from '../assets/images/ruby/ruby_logo.jpeg';
+import rubyLogo from '../assets/images/ruby/ruby_logo.jpg';
 
 import rubyPic1 from '../assets/images/ruby/ruby_pics (1).jpg';
 import rubyPic2 from '../assets/images/ruby/ruby_pics (2).jpg';
@@ -87,7 +87,7 @@ import rubyPic6 from '../assets/images/ruby/ruby_pics (6).jpg';
 
 const rubyPics = [rubyPic1, rubyPic2, rubyPic3, rubyPic4, rubyPic5, rubyPic6];
 
-import angelLogo from '../assets/images/angel/angel_Logo.jpeg';
+import angelLogo from '../assets/images/angel/angel_Logo.jpg';
 
 import angelPic1 from '../assets/images/angel/angel_pics (1).jpg';
 import angelPic2 from '../assets/images/angel/angel_pics (2).jpg';
