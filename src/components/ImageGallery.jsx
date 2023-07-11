@@ -44,12 +44,13 @@ function ImageGallery({ open, setOpen, barber }) {
                 <div className="absolute top-0 right-0 block pt-4 pr-4 sm:block">
                   <button
                     type="button"
-                    className="text-gray-400 bg-white rounded-md hover:text-gray-500"
+                    className="text-gray-400 bg-white rounded-md outline-none hover:text-gray-500"
                     onClick={() => setOpen(false)}
                   >
                     <XMarkIcon className="w-6 h-6" />
                   </button>
                 </div>
+
                 <div className="px-6 mx-auto max-w-7xl lg:px-8">
                   <ul
                     role="list"
