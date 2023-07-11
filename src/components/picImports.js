@@ -121,15 +121,6 @@ const angelPics = [
 
 const barbers = [
   {
-    name: 'RubenCutz',
-    role: 'Barber',
-    imageUrl: rubenPic1,
-    bookUrl:
-      'https://booksy.com/en-us/19778_ruben-cutz_barber-shop_37616_round-rock#ba_s=vl_1',
-    linkedinUrl: '#',
-    pics: rubenPics,
-  },
-  {
     name: 'Marcos',
     role: 'Barber',
     imageUrl: marcosLogo,
@@ -146,6 +137,15 @@ const barbers = [
       'https://booksy.com/en-us/907392_jona-the-barber_barber-shop_37616_round-rock#ba_s=sh_1',
     linkedinUrl: '#',
     pics: jonathanPics,
+  },
+  {
+    name: 'RubenCutz',
+    role: 'Barber',
+    imageUrl: rubenPic1,
+    bookUrl:
+      'https://booksy.com/en-us/19778_ruben-cutz_barber-shop_37616_round-rock#ba_s=vl_1',
+    linkedinUrl: '#',
+    pics: rubenPics,
   },
   {
     name: 'Mehdi',
