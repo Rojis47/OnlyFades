@@ -59,18 +59,18 @@ function ImageGallery({ open, setOpen, barber }) {
                     className="grid max-w-2xl grid-cols-1 mx-auto my-20 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
                   >
                     {barber.pics.map((image, i) => (
-                      <LazyLoad key={i}>
-                        <div className="overflow-hidden rounded-xl ">
-                          <div className="overflow-hidden ">
-                            <img
-                              loading="lazy"
-                              src={image}
-                              alt={`Image ${i + 1} for ${barber.name}`}
-                              className="aspect-[14/13] w-full drop-shadow-3xl hover:scale-110 transition duration-500 cursor-pointer object-cover"
-                            />
-                          </div>
+                      // <LazyLoad >
+                      <div key={i} className="overflow-hidden rounded-xl ">
+                        <div className="overflow-hidden ">
+                          <img
+                            loading="lazy"
+                            src={image}
+                            alt={`Image ${i + 1} for ${barber.name}`}
+                            className="aspect-[14/13] w-full drop-shadow-3xl hover:scale-110 transition duration-500 cursor-pointer object-cover"
+                          />
                         </div>
-                      </LazyLoad>
+                      </div>
+                      // </LazyLoad>
                     ))}
                   </ul>
                 </div>
