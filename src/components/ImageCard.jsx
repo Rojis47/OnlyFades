@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Blurhash } from 'react-blurhash';
 
-function ImageCard({ barber, openModal }) {
+const ImageCard = ({ barber, setViewedImage, index }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
@@ -24,20 +24,14 @@ function ImageCard({ barber, openModal }) {
           punch={1}
         />
       </div>
-      <div className="overflow-hidden bg-gray-500 rounded-xl ">
-        <div className="overflow-hidden rounded-xl ">
-          <img
-            className="aspect-[14/13] w-full drop-shadow-3xl lg:hover:scale-110 transition duration-500 cursor-pointer object-cover"
-            src={barber.imageUrl}
-            alt=""
-            onClick={() => openModal(barber)}
-            style={{ display: !imageLoaded ? 'none' : 'inline' }}
-          />
-        </div>
-      </div>
-      ;
+      <img
+        className="aspect-[14/13]  rounded-xl w-full drop-shadow-3xl cursor-pointer object-cover"
+        src={barber.imageUrl}
+        alt=""
+        onClick={() => setViewedImage(index)}
+      />
     </>
   );
-}
+};
 
 export default ImageCard;

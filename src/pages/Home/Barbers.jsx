@@ -5,18 +5,7 @@ import barbers from '../../components/picImports';
 import ImageCard from '../../components/ImageCard';
 
 export default function Barbers() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentBarber, setCurrentBarber] = useState(null);
-
-  const openModal = (barber) => {
-    setCurrentBarber(barber);
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setCurrentBarber(null);
-    setIsModalOpen(false);
-  };
+  const [viewedImage, setViewedImage] = useState(null);
 
   return (
     <div id="Barbers" className="py-24 ">
@@ -42,17 +31,15 @@ export default function Barbers() {
 
               <ImageCard
                 barber={barber}
-                openModal={() => openModal(barber)}
+                setViewedImage={setViewedImage}
                 index={i}
               />
 
-              {currentBarber && (
-                <ImageGallery
-                  open={isModalOpen}
-                  onClose={closeModal}
-                  barber={currentBarber}
-                />
-              )}
+              <ImageGallery
+                open={viewedImage === i}
+                setOpen={() => setViewedImage(null)}
+                barber={barber}
+              />
 
               <Link
                 to={barber.bookUrl}
