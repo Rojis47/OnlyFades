@@ -1,16 +1,22 @@
-import { Fragment, useRef } from 'react';
+import { Fragment, useRef, useEffect } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import GalleryImageCard from './GalleryImageCard';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 
 function ImageGallery({ open, setOpen, barber }) {
   const cancelButtonRef = useRef(null);
+  useEffect(() => {
+    barber.pics.map((image) => {
+      const img = new Image();
+      img.src = image;
+    });
+  }, [barber]);
 
   return (
     <Transition show={open} as={Fragment}>
       <Dialog
         as="div"
-        className="relative z-10"
+        className={`relative z-10 ${open ? 'block' : 'hidden'}`}
         initialFocus={cancelButtonRef}
         onClose={setOpen}
       >
