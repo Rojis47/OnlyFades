@@ -3,7 +3,7 @@ import { Dialog, Transition } from '@headlessui/react';
 import GalleryImageCard from './GalleryImageCard';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 
-function ImageGallery({ open, setOpen, barber }) {
+function ImageGallery({ open, onClose, barber }) {
   const cancelButtonRef = useRef(null);
 
   return (
@@ -12,7 +12,7 @@ function ImageGallery({ open, setOpen, barber }) {
         as="div"
         className="relative z-10"
         initialFocus={cancelButtonRef}
-        onClose={setOpen}
+        onClose={onClose}
       >
         <Transition.Child
           as={Fragment}
@@ -45,7 +45,7 @@ function ImageGallery({ open, setOpen, barber }) {
                   <button
                     type="button"
                     className="text-gray-400 bg-white rounded-md outline-none hover:text-gray-500"
-                    onClick={() => setOpen(false)}
+                    onClick={onClose}
                   >
                     <XMarkIcon className="w-6 h-6" />
                   </button>
