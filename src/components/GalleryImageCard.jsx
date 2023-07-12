@@ -25,18 +25,13 @@ const GalleryImageCard = ({ image, alt }) => {
         />
       </div>
 
-      <div
-        style={{ display: !imageLoaded ? 'none' : 'inline' }}
-        className="overflow-hidden rounded-xl "
-      >
-        <div className="overflow-hidden ">
-          <img
-            loading="lazy"
-            src={image}
-            alt={alt}
-            className="aspect-[14/13] w-full drop-shadow-3xl lg:hover:scale-110 transition duration-500 object-cover"
-          />
-        </div>
+      <div style={{ display: !imageLoaded ? 'none' : 'inline' }}>
+        <img
+          loading="lazy"
+          src={image}
+          alt={alt}
+          className="aspect-[14/13] w-full drop-shadow-3xl lg:hover:scale-110 transition duration-500 object-cover"
+        />
       </div>
     </>
   );
