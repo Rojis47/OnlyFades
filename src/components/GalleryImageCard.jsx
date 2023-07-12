@@ -16,12 +16,13 @@ const GalleryImageCard = ({ image, alt }) => {
     <>
       <div style={{ display: imageLoaded ? 'none' : 'inline' }}>
         <Blurhash
-          hash="|KO2?U%2Tw=wR6cErDEhOD]~RBVZRip0W9ofwxM_};RPxuwH%3s89]t8$%tLOtxZ%gixtQt8IUS#I.ENa0NZIVt6xFM{M{%1j^M_bcRPX9nht7n+j[rrW;ni%Mt7V@W;t7t8%1bbxat7WBIUR*RjRjRjxuRjs.MxbbV@WY"
-          width={200}
-          height={200}
+          hash="L6PZfSi_.AyE_3t7t7R**0o#DgR4"
+          width={250}
+          height={250}
           resolutionX={32}
           resolutionY={32}
           punch={1}
+          className="rounded-xl"
         />
       </div>
 
@@ -30,7 +31,7 @@ const GalleryImageCard = ({ image, alt }) => {
           loading="lazy"
           src={image}
           alt={alt}
-          className="aspect-[14/13] w-full drop-shadow-3xl lg:hover:scale-110 transition duration-500 object-cover"
+          className="aspect-[14/13] w-full drop-shadow-3xl lg:hover:scale-110 transition duration-500 hover:drop-shadow-4xl object-cover rounded-xl"
         />
       </div>
     </>

@@ -29,13 +29,13 @@ export default function Barbers() {
                 {barber.name}
               </h3>
 
-              <ImageCard
+              <ImageCard //main pic
                 barber={barber}
                 setViewedImage={setViewedImage}
                 index={i}
               />
 
-              <ImageGallery
+              <ImageGallery //modal
                 open={viewedImage === i}
                 setOpen={() => setViewedImage(null)}
                 barber={barber}

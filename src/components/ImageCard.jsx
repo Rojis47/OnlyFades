@@ -16,7 +16,7 @@ const ImageCard = ({ barber, setViewedImage, index }) => {
     <>
       <div style={{ display: imageLoaded ? 'none' : 'inline' }}>
         <Blurhash
-          hash="|KO2?U%2Tw=wR6cErDEhOD]~RBVZRip0W9ofwxM_};RPxuwH%3s89]t8$%tLOtxZ%gixtQt8IUS#I.ENa0NZIVt6xFM{M{%1j^M_bcRPX9nht7n+j[rrW;ni%Mt7V@W;t7t8%1bbxat7WBIUR*RjRjRjxuRjs.MxbbV@WY"
+          hash="L6PZfSi_.AyE_3t7t7R**0o#DgR4"
           width={330}
           height={330}
           resolutionX={32}
