@@ -34,6 +34,15 @@ function ImageGallery({ open, setOpen, barber }) {
 
         <div className="fixed inset-0 z-10 overflow-y-auto">
           <div className="flex items-end justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
+            <div className="absolute top-0 right-0 block pt-4 pr-4 sm:block">
+              <button
+                type="button"
+                className="text-gray-400 bg-white rounded-md outline-none hover:text-gray-500"
+                onClick={() => setOpen(false)}
+              >
+                <XMarkIcon className="w-6 h-6" />
+              </button>
+            </div>
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -44,19 +53,9 @@ function ImageGallery({ open, setOpen, barber }) {
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
               <Dialog.Panel
-                style={{ width: '75vw' }}
-                className="relative px-4 pb-4 overflow-hidden text-left transition-all transform bg-white rounded-lg shadow-xl bg-opacity-90 drop-shadow-2xl sm:my-8 sm:p-6"
+                style={{ width: '75vw', height: '80vh' }} // Define a fixed height, you can adjust the '80vh' as per your requirement
+                className="relative px-4 pb-4 overflow-auto text-left transition-all transform bg-white rounded-lg shadow-xl bg-opacity-90 drop-shadow-2xl sm:my-8 sm:p-6"
               >
-                <div className="absolute top-0 right-0 block pt-4 pr-4 sm:block">
-                  <button
-                    type="button"
-                    className="text-gray-400 bg-white rounded-md outline-none hover:text-gray-500"
-                    onClick={() => setOpen(false)}
-                  >
-                    <XMarkIcon className="w-6 h-6" />
-                  </button>
-                </div>
-
                 <div className="px-6 mx-auto max-w-7xl lg:px-8">
                   <ul
                     role="list"
