@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState, Suspense, lazy } from 'react';
-
+import '../../index.css';
 import barbers from '../../components/picImports';
 import ImageCard from '../../components/ImageCard';
 
