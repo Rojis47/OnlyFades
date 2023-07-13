@@ -34,13 +34,13 @@ function ImageGallery({ open, setOpen, barber }) {
 
         <div className="fixed inset-0 z-10 overflow-y-auto">
           <div className="flex items-end justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
-            <div className="absolute block pt-4 pr-4 top-10 right-10 sm:block">
+            <div className="absolute top-0 right-0 block pt-4 pr-4 sm:block">
               <button
                 type="button"
                 className="text-gray-400 bg-white rounded-md outline-none hover:text-gray-500"
                 onClick={() => setOpen(false)}
               >
-                <XMarkIcon className="w-6 h-6" />
+                <XMarkIcon className="w-10 h-10" />
               </button>
             </div>
             <Transition.Child
