@@ -38,9 +38,15 @@ export default function Barbers() {
               />
 
               {viewedImage === i && (
-                <Suspense fallback={<div>Loading...</div>}>
-                  <ImageGallery //modal
-                    open={true}
+                <Suspense
+                  fallback={
+                    <div className="flex items-center justify-center w-full h-full">
+                      <div className="w-64 h-64 ease-linear border-8 border-t-8 border-gray-200 rounded-full loader"></div>
+                    </div>
+                  }
+                >
+                  <ImageGallery
+                    open={viewedImage === i}
                     setOpen={() => setViewedImage(null)}
                     barber={barber}
                   />
