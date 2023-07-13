@@ -7,6 +7,7 @@ body > #root > div {
 }
 html,
 body {
+  background-color: bg-gray-900;
   height: 100%;
   overflow: hidden;
 }
