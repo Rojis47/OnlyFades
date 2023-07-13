@@ -7,7 +7,7 @@ body > #root > div {
 }
 html,
 body {
-  background-color: bg-gray-900;
+  background-color: #0f1522;
   height: 100%;
   overflow: hidden;
 }
@@ -19,7 +19,6 @@ body {
   top: 0;
   bottom: 0;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 
 .myBackgroundImage {
