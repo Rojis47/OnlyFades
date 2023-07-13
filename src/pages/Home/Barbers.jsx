@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
-import ImageGallery from '../../components/ImageGallery';
+import { useState, Suspense, lazy } from 'react';
+
 import barbers from '../../components/picImports';
 import ImageCard from '../../components/ImageCard';
+
+const ImageGallery = lazy(() => import('../../components/ImageGallery'));
 
 export default function Barbers() {
   const [viewedImage, setViewedImage] = useState(null);
@@ -35,11 +37,15 @@ export default function Barbers() {
                 index={i}
               />
 
-              <ImageGallery //modal
-                open={viewedImage === i}
-                setOpen={() => setViewedImage(null)}
-                barber={barber}
-              />
+              {viewedImage === i && (
+                <Suspense fallback={<div>Loading...</div>}>
+                  <ImageGallery //modal
+                    open={true}
+                    setOpen={() => setViewedImage(null)}
+                    barber={barber}
+                  />
+                </Suspense>
+              )}
 
               <Link
                 to={barber.bookUrl}
