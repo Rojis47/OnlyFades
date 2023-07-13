@@ -5,6 +5,21 @@
 body > #root > div {
   height: 100vh;
 }
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
 
 .myBackgroundImage {
   position: relative;
