@@ -53,7 +53,7 @@ function ImageGallery({ open, setOpen, barber }) {
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
               <Dialog.Panel
-                style={{ width: '75vw', height: '80vh' }} // Define a fixed height, you can adjust the '80vh' as per your requirement
+                style={{ width: '75vw', height: '80vh' }}
                 className="relative px-4 pb-4 overflow-auto text-left transition-all transform bg-white rounded-lg shadow-xl bg-opacity-90 drop-shadow-2xl sm:my-8 sm:p-6"
               >
                 <div className="px-6 mx-auto max-w-7xl lg:px-8">

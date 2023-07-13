@@ -28,10 +28,9 @@ const GalleryImageCard = ({ image, alt }) => {
 
       <div style={{ display: !imageLoaded ? 'none' : 'inline' }}>
         <img
-          loading="lazy"
           src={image}
           alt={alt}
-          className="aspect-[14/13] w-full drop-shadow-3xl lg:hover:scale-110 transition duration-500 hover:drop-shadow-4xl object-cover rounded-xl"
+          className="aspect-[14/13] select-none touch-none w-full drop-shadow-3xl lg:hover:scale-110 lg:transition lg:duration-500 lg:hover:drop-shadow-4xl object-cover rounded-xl"
         />
       </div>
     </>
