@@ -119,6 +119,31 @@ const angelPics = [
   angelPic6,
 ];
 
+import mannyLogo from '../assets/images/manny/manny_logo.jpg';
+
+import mannyPic1 from '../assets/images/manny/manny_pics (1).jpg';
+import mannyPic2 from '../assets/images/manny/manny_pics (2).jpg';
+import mannyPic3 from '../assets/images/manny/manny_pics (3).jpg';
+import mannyPic4 from '../assets/images/manny/manny_pics (4).jpg';
+import mannyPic5 from '../assets/images/manny/manny_pics (5).jpg';
+import mannyPic6 from '../assets/images/manny/manny_pics (6).jpg';
+import mannyPic7 from '../assets/images/manny/manny_pics (7).jpg';
+import mannyPic8 from '../assets/images/manny/manny_pics (8).jpg';
+import mannyPic9 from '../assets/images/manny/manny_pics (9).jpg';
+import mannyPic10 from '../assets/images/manny/manny_pics (10).jpg';
+const mannyPics = [
+  mannyPic1,
+  mannyPic2,
+  mannyPic3,
+  mannyPic4,
+  mannyPic5,
+  mannyPic6,
+  mannyPic7,
+  mannyPic8,
+  mannyPic9,
+  mannyPic10,
+];
+
 const barbers = [
   {
     name: 'Marcos',
@@ -128,6 +153,15 @@ const barbers = [
       'https://booksy.com/en-us/28523_marcuts-the-barber_barber-shop_37616_round-rock#ba_s=hgr_1',
     linkedinUrl: '#',
     pics: marcosPics,
+  },
+  {
+    name: 'Manny',
+    role: 'Barber',
+    imageUrl: mannyLogo,
+    bookUrl:
+      'https://booksy.com/en-us/538786_scripted-blends-manny_barber-shop_37616_round-rock?do=invite&_branch_match_id=1203733963924441023&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVT3TLsTB3Kwn2ckwCAKjjGGwiAAAA',
+    linkedinUrl: '#',
+    pics: mannyPics,
   },
   {
     name: 'Jona The Barber',

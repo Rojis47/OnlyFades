@@ -27,6 +27,12 @@ export default {
       24: '24',
     },
     extend: {
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+      },
+      colors: {
+        primary: '#e0f7fa',
+      },
       dropShadow: {
         '3xl': [
           '0px 1px 1px rgba(0, 0, 0, 0.07)',
