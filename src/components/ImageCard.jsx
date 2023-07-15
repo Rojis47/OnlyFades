@@ -1,16 +1,22 @@
 import { useState, useEffect } from 'react';
 import { Blurhash } from 'react-blurhash';
 import { Link } from 'react-router-dom';
+import ImageGallery from './ImageGallery';
 
-const ImageCard = ({ barber, setViewedImage, index }) => {
+const ImageCard = ({ barber, setShowModal, setSelectedBarber }) => {
   return (
     <>
-      <div className="relative aspect-[4/6]  rounded-xl w-full drop-shadow-3xl cursor-pointer object-cover bg-primary font-sans">
+      <div
+        onClick={() => {
+          setSelectedBarber(barber);
+          setShowModal(true);
+        }}
+        className="relative aspect-[4/6]  rounded-xl w-full drop-shadow-3xl cursor-pointer object-cover bg-primary font-sans"
+      >
         <img
           className=" h-full shadow-[5px_5px_19px_1px_#000] rounded-xl drop-shadow-3xl cursor-pointer object-cover"
           src={barber.imageUrl}
           alt=""
-          onClick={() => setViewedImage(index)}
         />
         <div className="absolute flex flex-col gap-2 bottom-0 w-full text-center border-t border-white rounded-xl backdrop-blur-lg bg-[rgba(0,0,0,0.5)] h-2/5">
           <h3 className="mt-3 text-2xl tracking-tight text-white">

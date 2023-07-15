@@ -2,11 +2,11 @@ import { useState, Suspense, lazy } from 'react';
 import '../../index.css';
 import barbers from '../../components/picImports';
 import ImageCard from '../../components/ImageCard';
-
-const ImageGallery = lazy(() => import('../../components/ImageGallery'));
+import ImageGallery from '../../components/ImageGallery';
 
 export default function Barbers() {
-  const [viewedImage, setViewedImage] = useState(null);
+  const [selectedBarber, setSelectedBarber] = useState(null);
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <div id="Barbers" className="py-24 ">
@@ -28,21 +28,20 @@ export default function Barbers() {
             <div key={i} className="w-full h-full p-3">
               <ImageCard
                 barber={barber}
-                setViewedImage={setViewedImage}
+                setSelectedBarber={setSelectedBarber}
+                showModal={showModal}
+                setShowModal={setShowModal}
                 index={i}
               />
-
-              {viewedImage === i && (
-                <Suspense fallback={<div>Loading...</div>}>
-                  <ImageGallery
-                    open={viewedImage === i}
-                    setOpen={() => setViewedImage(null)}
-                    barber={barber}
-                  />
-                </Suspense>
-              )}
             </div>
           ))}
+          {showModal && (
+            <ImageGallery
+              showModal={showModal}
+              setShowModal={setShowModal}
+              barber={selectedBarber}
+            />
+          )}
         </ul>
       </div>
     </div>
