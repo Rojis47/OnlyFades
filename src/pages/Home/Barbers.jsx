@@ -1,4 +1,4 @@
-import { useState, Suspense, lazy } from 'react';
+import { useState } from 'react';
 import '../../index.css';
 import barbers from '../../components/picImports';
 import ImageCard from '../../components/ImageCard';
@@ -29,9 +29,7 @@ export default function Barbers() {
               <ImageCard
                 barber={barber}
                 setSelectedBarber={setSelectedBarber}
-                showModal={showModal}
                 setShowModal={setShowModal}
-                index={i}
               />
             </div>
           ))}

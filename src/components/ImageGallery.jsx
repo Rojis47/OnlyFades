@@ -1,5 +1,3 @@
-import { Fragment, useRef, useEffect } from 'react';
-import { Dialog, Transition } from '@headlessui/react';
 import GalleryImageCard from './GalleryImageCard';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 
