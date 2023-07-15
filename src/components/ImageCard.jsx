@@ -3,32 +3,9 @@ import { Blurhash } from 'react-blurhash';
 import { Link } from 'react-router-dom';
 
 const ImageCard = ({ barber, setViewedImage, index }) => {
-  const [imageLoaded, setImageLoaded] = useState(false);
-
-  useEffect(() => {
-    const img = new Image();
-    img.onload = () => {
-      setImageLoaded(true);
-    };
-    img.src = barber.imageUrl;
-  }, [barber.imageUrl]);
-
   return (
     <>
-      <div style={{ display: imageLoaded ? 'none' : 'inline' }}>
-        <Blurhash
-          hash="CKJt-k_3.S-;D-_NW?-;"
-          width={330}
-          height={330}
-          resolutionX={32}
-          resolutionY={32}
-          punch={1}
-        />
-      </div>
-      <div
-        style={{ display: !imageLoaded ? 'none' : 'inline-block' }}
-        className="relative aspect-[4/6]  rounded-xl w-full drop-shadow-3xl cursor-pointer object-cover bg-primary font-sans"
-      >
+      <div className="relative aspect-[4/6]  rounded-xl w-full drop-shadow-3xl cursor-pointer object-cover bg-primary font-sans">
         <img
           className=" h-full shadow-[5px_5px_19px_1px_#000] rounded-xl drop-shadow-3xl cursor-pointer object-cover"
           src={barber.imageUrl}
