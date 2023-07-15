@@ -26,8 +26,8 @@ const ImageCard = ({ barber, setViewedImage, index }) => {
         />
       </div>
       <div
-        style={{ display: !imageLoaded ? 'none' : 'inline' }}
-        className="relative aspect-[5/7]  rounded-xl w-full drop-shadow-3xl cursor-pointer object-cover bg-primary font-sans"
+        style={{ display: !imageLoaded ? 'none' : 'inline-block' }}
+        className="relative aspect-[4/6]  rounded-xl w-full drop-shadow-3xl cursor-pointer object-cover bg-primary font-sans"
       >
         <img
           className=" h-full shadow-[5px_5px_19px_1px_#000] rounded-xl drop-shadow-3xl cursor-pointer object-cover"
@@ -39,7 +39,7 @@ const ImageCard = ({ barber, setViewedImage, index }) => {
           <h3 className="mt-3 text-2xl tracking-tight text-white">
             {barber.name}
           </h3>
-          <h3 className="text-xl font-thin tracking-tight text-white">
+          <h3 className="text-sm font-thin tracking-tight text-white">
             {barber.role}
           </h3>
 
