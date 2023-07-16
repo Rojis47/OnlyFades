@@ -12,7 +12,7 @@ const ImageCard = ({ barber, setShowModal, setSelectedBarber }) => {
         className="relative aspect-[4/6] rounded-xl w-full drop-shadow-3xl cursor-pointer bg-primary font-sans"
       >
         <img
-          loading="lazy"
+          loading="eager"
           name={barber.name}
           className=" h-full shadow-[5px_5px_19px_1px_#000] rounded-xl drop-shadow-3xl cursor-pointer object-cover"
           src={barber.imageUrl}
