@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
+import { memo } from 'react';
 
 const ImageCard = ({ barber, setShowModal, setSelectedBarber }) => {
   return (
     <>
       <div
+        loading="lazy"
         onClick={() => {
           setSelectedBarber(barber);
           setShowModal(true);
@@ -11,6 +13,7 @@ const ImageCard = ({ barber, setShowModal, setSelectedBarber }) => {
         className="relative aspect-[4/6] rounded-xl w-full drop-shadow-3xl cursor-pointer bg-primary font-sans"
       >
         <img
+          name={barber.name}
           className=" h-full shadow-[5px_5px_19px_1px_#000] rounded-xl drop-shadow-3xl cursor-pointer object-cover"
           src={barber.imageUrl}
           alt=""
@@ -25,6 +28,7 @@ const ImageCard = ({ barber, setShowModal, setSelectedBarber }) => {
 
           <div className="w-1/2 mx-auto mb-6">
             <Link
+              to={barber.bookUrl}
               className="z-10 flex items-center justify-center w-full gap-3 py-2 m-auto font-sans font-semibold leading-6 text-black transition-all duration-200 ease-in bg-white border border-white rounded-full text-xlg place-content-center hover:bg-black hover:border-black hover:text-white"
               smooth="true"
             >
@@ -51,4 +55,4 @@ const ImageCard = ({ barber, setShowModal, setSelectedBarber }) => {
   );
 };
 
-export default ImageCard;
+export default memo(ImageCard);
