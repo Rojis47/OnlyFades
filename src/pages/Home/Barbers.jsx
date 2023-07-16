@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import '../../index.css';
-import barbers from '../../components/picImports';
 import ImageCard from '../../components/ImageCard';
 import ImageGallery from '../../components/ImageGallery';
 

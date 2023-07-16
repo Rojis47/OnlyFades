@@ -28,7 +28,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
+        sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+        serif: ['Roboto Slab', 'ui-serif', 'Georgia'],
       },
       colors: {
         primary: '#e0f7fa',

@@ -18,7 +18,7 @@ const ImageCard = ({ setShowModal, setSelectedBarber }) => {
           src={barber.imageUrl}
           alt=""
         />
-        <div className="absolute flex flex-col gap-2 bottom-0 w-full text-center border-t border-white rounded-xl backdrop-blur-lg bg-[rgba(0,0,0,0.5)] h-2/5">
+        <div className="absolute flex flex-col gap-2 bottom-0 w-full text-center border-t border-gray-600 rounded-xl backdrop-blur-lg bg-[rgba(0,0,0,0.5)] h-2/5">
           <h3 className="mt-3 text-2xl tracking-tight text-white">
             {barber.name}
           </h3>

@@ -40,7 +40,7 @@ const navigation = {
 export default function Footer() {
   return (
     <footer className="">
-      <div className="px-6 py-20 mx-auto overflow-hidden max-w-7xl sm:py-24 lg:px-8">
+      <div className="px-6 py-20 mx-auto overflow-hidden font-serif max-w-7xl sm:py-24 lg:px-8">
         <nav
           className="-mb-6 columns-2 sm:flex sm:items-center sm:justify-center sm:space-x-12"
           aria-label="Footer"
@@ -50,7 +50,7 @@ export default function Footer() {
               <Link
                 smooth="true"
                 to={item.href}
-                className="font-sans font-medium leading-6 text-white duration-300 ease-in-out hover:text-blue-500 text-xlg"
+                className="leading-6 text-gray-100 duration-300 ease-in-out hover:text-blue-500 text-xlg"
               >
                 {item.name}
               </Link>

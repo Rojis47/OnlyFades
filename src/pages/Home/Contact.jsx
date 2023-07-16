@@ -53,7 +53,7 @@ function Contact() {
     <div id="Contact" className="relative isolate">
       <div className="grid grid-cols-1 mx-auto max-w-7xl lg:grid-cols-2">
         <div className="relative px-6 pt-24 pb-20 sm:pt-32 lg:static lg:px-8 lg:py-48">
-          <div className="max-w-xl mx-auto lg:mx-0 lg:max-w-lg">
+          <div className="max-w-xl mx-auto font-serif lg:mx-0 lg:max-w-lg">
             <div className="absolute inset-y-0 left-0 w-full overflow-hidden -z-10 ring-white/5 lg:w-1/2">
               <div
                 className="absolute -left-56 top-[calc(100%-13rem)] transform-gpu blur-3xl lg:left-[max(-14rem,calc(100%-59rem))] lg:top-[calc(50%-7rem)]"
@@ -68,7 +68,7 @@ function Contact() {
                 />
               </div>
             </div>
-            <h2 className="text-3xl font-bold tracking-tight text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-white ">
               Ready for the ultimate fade experience?
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">

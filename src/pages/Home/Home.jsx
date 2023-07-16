@@ -36,10 +36,10 @@ function Home() {
                 <span className="sr-only">Your Company</span>
                 <img className="h-16 mx-auto mb-20 lg:h-24" src={logo} alt="" />
               </Link>
-              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                Expert Barbers, Exceptional Results
+              <h1 className="font-serif text-4xl font-semibold tracking-tight text-white sm:text-6xl">
+                Expert Barbers Exceptional Results
               </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-300">
+              <p className="mt-6 font-serif text-xl leading-8 text-gray-300">
                 Quality cuts, experienced barbers, relaxed vibe. Experience a
                 fresh approach to men's grooming.
               </p>
