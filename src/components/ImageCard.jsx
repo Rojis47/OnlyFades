@@ -55,4 +55,6 @@ const ImageCard = ({ barber, setShowModal, setSelectedBarber }) => {
   );
 };
 
-export default memo(ImageCard);
+const ImageCardMemo = memo(ImageCard);
+
+export default ImageCardMemo;
