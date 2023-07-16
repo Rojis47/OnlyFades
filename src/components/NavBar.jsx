@@ -17,7 +17,7 @@ function NavBar() {
   return (
     <header className="absolute inset-x-0 z-50 top-5">
       <nav
-        className="flex items-center justify-around lg:px-8"
+        className="flex items-center justify-end mr-4 lg:px-8 lg:justify-center lg:mr-0"
         aria-label="Global"
       >
         <div className="flex lg:hidden">
