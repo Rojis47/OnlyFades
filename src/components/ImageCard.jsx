@@ -54,7 +54,10 @@ const ImageCard = ({ barber, setShowModal, setSelectedBarber }) => {
     </>
   );
 };
+const arePropsEqual = (prevProps, nextProps) => {
+  return prevProps.barber === nextProps.barber;
+};
 
-const ImageCardMemo = memo(ImageCard);
+const ImageCardMemo = memo(ImageCard, arePropsEqual);
 
 export default ImageCardMemo;
