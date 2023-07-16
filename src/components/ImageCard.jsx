@@ -25,8 +25,7 @@ const ImageCard = ({ barber, setShowModal, setSelectedBarber }) => {
 
           <div className="w-1/2 mx-auto mb-6">
             <Link
-              to={barber.bookUrl}
-              className="flex items-center justify-center w-full gap-3 py-2 m-auto font-sans font-semibold leading-6 text-black transition-all duration-200 ease-in bg-white border border-white rounded-full text-xlg place-content-center hover:bg-black hover:border-black hover:text-white"
+              className="z-10 flex items-center justify-center w-full gap-3 py-2 m-auto font-sans font-semibold leading-6 text-black transition-all duration-200 ease-in bg-white border border-white rounded-full text-xlg place-content-center hover:bg-black hover:border-black hover:text-white"
               smooth="true"
             >
               Book
