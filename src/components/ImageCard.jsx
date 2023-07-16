@@ -1,20 +1,20 @@
 import { Link } from 'react-router-dom';
 import { memo } from 'react';
+import barbers from '../components/picImports';
 
-const ImageCard = ({ barber, setShowModal, setSelectedBarber }) => {
-  return (
-    <>
+const ImageCard = ({ setShowModal, setSelectedBarber }) => {
+  return barbers.map((barber, i) => (
+    <div key={i}>
       <div
         onClick={() => {
           setSelectedBarber(barber);
           setShowModal(true);
         }}
-        className="relative aspect-[4/6] rounded-xl w-full drop-shadow-3xl cursor-pointer bg-primary font-sans"
+        className="relative aspect-[4/6] rounded-xl w-full cursor-pointer bg-primary font-sans"
       >
         <img
-          loading="eager"
           name={barber.name}
-          className=" h-full shadow-[5px_5px_19px_1px_#000] rounded-xl drop-shadow-3xl cursor-pointer object-cover"
+          className=" h-full shadow-[5px_5px_19px_1px_#000] rounded-xl cursor-pointer object-cover"
           src={barber.imageUrl}
           alt=""
         />
@@ -51,8 +51,8 @@ const ImageCard = ({ barber, setShowModal, setSelectedBarber }) => {
           </div>
         </div>
       </div>
-    </>
-  );
+    </div>
+  ));
 };
 const arePropsEqual = (prevProps, nextProps) => {
   return prevProps.barber === nextProps.barber;
