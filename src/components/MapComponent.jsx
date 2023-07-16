@@ -1,12 +1,10 @@
 import React from 'react';
-import LazyLoad from 'react-lazy-load';
 
 class MapComponent extends React.Component {
   render() {
     return (
-      <LazyLoad
+      <div
         height={200}
-        once
         className="relative overflow-hidden aspect-w-10 aspect-h-10"
       >
         <iframe
@@ -18,7 +16,7 @@ class MapComponent extends React.Component {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-      </LazyLoad>
+      </div>
     );
   }
 }
