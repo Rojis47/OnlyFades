@@ -16,9 +16,9 @@ const GalleryImageCard = ({ image, alt }) => {
     <>
       <div style={{ display: imageLoaded ? 'none' : 'inline' }}>
         <Blurhash
-          hash="CKJt-k_3.S-;D-_NW?-;"
-          width={250}
-          height={250}
+          hash="hFCZz=o{J2%0E0S4aeadyZv-nLI]V?t7X7ob02H@xHSkr^s=jKofZfE1Ot?GofbbafWCIA-;%hI.slWTR%R*"
+          width={150}
+          height={150}
           resolutionX={32}
           resolutionY={32}
           punch={1}
