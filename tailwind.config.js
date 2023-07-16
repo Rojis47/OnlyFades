@@ -31,6 +31,9 @@ export default {
         sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
         serif: ['Roboto Slab', 'ui-serif', 'Georgia'],
       },
+      screens: {
+        half: '450px',
+      },
       colors: {
         primary: '#e0f7fa',
       },

@@ -18,18 +18,18 @@ const ImageCard = ({ setShowModal, setSelectedBarber }) => {
           src={barber.imageUrl}
           alt=""
         />
-        <div className="absolute flex flex-col gap-2 bottom-0 w-full text-center border-t border-gray-600 rounded-xl backdrop-blur-lg bg-[rgba(0,0,0,0.5)] h-2/5">
-          <h3 className="mt-3 text-2xl tracking-tight text-white">
+        <div className="absolute flex flex-col justify-evenly text-xl half:text-2xl space-y-4 bottom-0 w-full text-center border-t border-gray-600 rounded-xl backdrop-blur-lg bg-[rgba(0,0,0,0.5)] h-2/5">
+          <h3 className="text-xl tracking-tight text-white  half:text-2xl">
             {barber.name}
           </h3>
-          <h3 className="text-sm font-thin tracking-tight text-white">
+          <h3 className="text-sm font-thin tracking-tight text-white half:text-xl">
             {barber.role}
           </h3>
 
           <div className="w-1/2 mx-auto mb-6">
             <Link
               to={barber.bookUrl}
-              className="z-10 flex items-center justify-center w-full gap-3 py-2 m-auto font-sans font-semibold leading-6 text-black transition-all duration-200 ease-in bg-white border border-white rounded-full text-xlg place-content-center hover:bg-black hover:border-black hover:text-white"
+              className="z-10 flex items-center justify-center w-full gap-3 py-2 m-auto font-sans font-semibold leading-6 text-black transition-all duration-200 ease-in bg-white border border-white rounded-full place-content-center hover:bg-black hover:border-black hover:text-white"
               smooth="true"
             >
               Book
