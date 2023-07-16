@@ -55,6 +55,7 @@ const mehdiPics = [
   mehdiPic6,
 ];
 
+import zayLogo from '../assets/images/zay/zay_logo.jpg';
 import zayPic1 from '../assets/images/zay/zay_pics (1).jpg';
 import zayPic2 from '../assets/images/zay/zay_pics (2).jpg';
 import zayPic3 from '../assets/images/zay/zay_pics (3).jpg';
@@ -63,7 +64,15 @@ import zayPic5 from '../assets/images/zay/zay_pics (5).jpg';
 import zayPic6 from '../assets/images/zay/zay_pics (6).jpg';
 import zayPic7 from '../assets/images/zay/zay_pics (7).jpg';
 import zayPic8 from '../assets/images/zay/zay_pics (8).jpg';
+import zayPic9 from '../assets/images/zay/zay_pics (9).jpg';
+import zayPic10 from '../assets/images/zay/zay_pics (10).jpg';
+import zayPic11 from '../assets/images/zay/zay_pics (11).jpg';
+import zayPic12 from '../assets/images/zay/zay_pics (12).jpg';
 const zayPics = [
+  zayPic9,
+  zayPic10,
+  zayPic11,
+  zayPic12,
   zayPic1,
   zayPic2,
   zayPic3,
@@ -144,6 +153,24 @@ const mannyPics = [
   mannyPic10,
 ];
 
+import skoobaLogo from '../assets/images/skooba/skooba_logo.jpg';
+
+import skoobaPic1 from '../assets/images/skooba/skooba_pics (1).jpg';
+import skoobaPic2 from '../assets/images/skooba/skooba_pics (2).jpg';
+import skoobaPic3 from '../assets/images/skooba/skooba_pics (3).jpg';
+import skoobaPic4 from '../assets/images/skooba/skooba_pics (4).jpg';
+import skoobaPic5 from '../assets/images/skooba/skooba_pics (5).jpg';
+import skoobaPic6 from '../assets/images/skooba/skooba_pics (6).jpg';
+
+const skoobaPics = [
+  skoobaPic1,
+  skoobaPic2,
+  skoobaPic3,
+  skoobaPic4,
+  skoobaPic5,
+  skoobaPic6,
+];
+
 const barbers = [
   {
     name: 'Marcos',
@@ -153,6 +180,15 @@ const barbers = [
       'https://booksy.com/en-us/28523_marcuts-the-barber_barber-shop_37616_round-rock#ba_s=hgr_1',
     linkedinUrl: '#',
     pics: marcosPics,
+  },
+  {
+    name: 'SkoobaBlendz',
+    role: 'Barber',
+    imageUrl: skoobaLogo,
+    bookUrl:
+      'https://booksy.com/en-us/659439_skooba-blendz_barber-shop_37616_round-rock',
+    linkedinUrl: '#',
+    pics: skoobaPics,
   },
   {
     name: 'Manny',
@@ -193,7 +229,7 @@ const barbers = [
   {
     name: 'Zay',
     role: 'Barber',
-    imageUrl: zayPics[0],
+    imageUrl: zayLogo,
     bookUrl: '#',
     linkedinUrl: '#',
     pics: zayPics,

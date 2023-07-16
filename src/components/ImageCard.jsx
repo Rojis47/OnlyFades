@@ -5,14 +5,12 @@ import barbers from '../components/picImports';
 const ImageCard = ({ setShowModal, setSelectedBarber }) => {
   return barbers.map((barber, i) => (
     <div key={i}>
-      <div
-        onClick={() => {
-          setSelectedBarber(barber);
-          setShowModal(true);
-        }}
-        className="relative aspect-[4/6] rounded-xl w-full cursor-pointer bg-primary font-sans"
-      >
+      <div className="relative aspect-[4/6] rounded-xl w-full cursor-pointer bg-primary font-sans">
         <img
+          onClick={() => {
+            setSelectedBarber(barber);
+            setShowModal(true);
+          }}
           name={barber.name}
           className=" h-full shadow-[5px_5px_19px_1px_#000] rounded-xl cursor-pointer object-cover"
           src={barber.imageUrl}

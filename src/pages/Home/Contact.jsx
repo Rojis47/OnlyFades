@@ -6,28 +6,6 @@ import {
   PhoneIcon,
 } from '@heroicons/react/24/outline';
 
-const formFields = [
-  {
-    id: 'first-name',
-    label: 'First name',
-    type: 'text',
-    autoComplete: 'given-name',
-  },
-  {
-    id: 'last-name',
-    label: 'Last name',
-    type: 'text',
-    autoComplete: 'family-name',
-  },
-  { id: 'email', label: 'Email', type: 'email', autoComplete: 'email' },
-  {
-    id: 'phone-number',
-    label: 'Phone number',
-    type: 'tel',
-    autoComplete: 'tel',
-  },
-  { id: 'message', label: 'Message', type: 'textarea', autoComplete: 'off' },
-];
 const contactInfo = [
   {
     label: 'Address',
@@ -43,8 +21,8 @@ const contactInfo = [
   {
     label: 'Email',
     icon: EnvelopeIcon,
-    value: 'hello@example.com',
-    link: 'mailto:hello@example.com',
+    value: 'onlyfades1320@gmail.com',
+    link: 'mailto:onlyfades1320@gmail.com',
   },
 ];
 
