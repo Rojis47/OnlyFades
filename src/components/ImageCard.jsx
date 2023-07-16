@@ -19,12 +19,14 @@ const ImageCard = ({ setShowModal, setSelectedBarber }) => {
           alt=""
         />
         <div className="absolute flex flex-col justify-evenly text-xl half:text-2xl space-y-4 bottom-0 w-full text-center border-t border-gray-600 rounded-xl backdrop-blur-lg bg-[rgba(0,0,0,0.5)] h-2/5">
-          <h3 className="text-xl tracking-tight text-white  half:text-2xl">
-            {barber.name}
-          </h3>
-          <h3 className="text-sm font-thin tracking-tight text-white half:text-xl">
-            {barber.role}
-          </h3>
+          <div>
+            <h3 className="text-2xl tracking-tight text-white half:text-2xl">
+              {barber.name}
+            </h3>
+            <h3 className="text-xl font-thin tracking-tight text-white half:text-xl">
+              {barber.role}
+            </h3>
+          </div>
 
           <div className="w-1/2 mx-auto mb-6">
             <Link
