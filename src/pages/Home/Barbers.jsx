@@ -12,10 +12,10 @@ export default function Barbers() {
     <div id="Barbers" className="py-24 ">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h2 className="font-sans text-3xl tracking-tight text-white sm:text-4xl">
             Book With Our Barbers
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-300">
+          <p className="mt-6 font-sans text-lg leading-8 text-gray-300">
             We’re a dynamic group of individuals who are passionate about what
             we do and dedicated to delivering the best results for our clients.
           </p>

@@ -30,10 +30,10 @@ function NavBar() {
             <Bars3Icon className="w-6 h-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden mt-2 lg:flex lg:gap-x-12">
+        <div className="hidden mt-2 font-sans lg:flex lg:gap-x-12">
           {navigation.map((item, i) => (
             <Link
-              className="text-sm font-semibold leading-6 text-white duration-300 ease-in-out hover:text-blue-500"
+              className="font-sans leading-6 text-white duration-300 ease-in-out text-xlg hover:text-blue-500"
               key={i}
               smooth="true"
               to={item.href}
@@ -74,7 +74,7 @@ function NavBar() {
                     smooth="true"
                     key={i}
                     to={item.href}
-                    className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-white rounded-lg hover:bg-gray-800"
+                    className="block px-3 py-2 -mx-3 font-sans text-base leading-7 text-white rounded-lg md:hover:bg-gray-800"
                   >
                     {item.name}
                   </Link>

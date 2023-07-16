@@ -50,7 +50,7 @@ export default function Footer() {
               <Link
                 smooth="true"
                 to={item.href}
-                className="font-medium leading-6 text-white duration-300 ease-in-out hover:text-blue-500 text-xlg"
+                className="font-sans font-medium leading-6 text-white duration-300 ease-in-out hover:text-blue-500 text-xlg"
               >
                 {item.name}
               </Link>
