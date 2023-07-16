@@ -65,12 +65,10 @@ import zayPic6 from '../assets/images/zay/zay_pics (6).jpg';
 import zayPic7 from '../assets/images/zay/zay_pics (7).jpg';
 import zayPic8 from '../assets/images/zay/zay_pics (8).jpg';
 import zayPic9 from '../assets/images/zay/zay_pics (9).jpg';
-import zayPic10 from '../assets/images/zay/zay_pics (10).jpg';
 import zayPic11 from '../assets/images/zay/zay_pics (11).jpg';
 import zayPic12 from '../assets/images/zay/zay_pics (12).jpg';
 const zayPics = [
   zayPic9,
-  zayPic10,
   zayPic11,
   zayPic12,
   zayPic1,

@@ -6,9 +6,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import logo from '../assets/logo/OnlyFades.png';
 
 const navigation = [
-  { name: 'Barbers', href: '#Barbers' },
-  { name: 'Features', href: '#' },
-  { name: 'About Us', href: '#' },
+  { name: 'Our Barbers', href: '#Barbers' },
   { name: 'Contact Us', href: '#Contact' },
 ];
 
@@ -50,7 +48,7 @@ function NavBar() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-gradient-to-b to-black from-cyan-900 sm:max-w-sm sm:ring-1 sm:ring-white/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-[rgba(0,0,0,0.3)] backdrop-blur-lg sm:max-w-sm sm:ring-1 sm:ring-white/10">
           <div className="flex items-center justify-between">
             <div className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
