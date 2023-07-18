@@ -2,9 +2,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 const navigation = {
   main: [
-    { name: 'Barbers', href: '#Barbers' },
-    { name: 'Features', href: '#' },
-    { name: 'About Us', href: '#' },
+    { name: 'Our Barbers', href: '#Barbers' },
     { name: 'Contact Us', href: '#Contact' },
   ],
   social: [
@@ -42,7 +40,7 @@ export default function Footer() {
     <footer className="">
       <div className="px-6 py-20 mx-auto overflow-hidden font-serif max-w-7xl sm:py-24 lg:px-8">
         <nav
-          className="-mb-6 columns-2 sm:flex sm:items-center sm:justify-center sm:space-x-12"
+          className="-mb-6 text-center columns-2 sm:flex sm:items-center sm:justify-center sm:space-x-12"
           aria-label="Footer"
         >
           {navigation.main.map((item) => (
