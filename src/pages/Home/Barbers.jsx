@@ -28,10 +28,6 @@ export default function Barbers() {
             setSelectedBarber={setSelectedBarber}
             setShowModal={setShowModal}
           />
-          {/* <ImageCard
-            setSelectedBarber={setSelectedBarber}
-            setShowModal={setShowModal}
-          /> */}
           {showModal && (
             <ImageGallery
               showModal={showModal}
