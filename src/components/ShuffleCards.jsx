@@ -48,7 +48,7 @@ const ShuffleCards = ({ setShowModal, setSelectedBarber }) => {
         className="text-lg font-medium text-center text-indigo-400"
         initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 1 }}
+        transition={{ duration: 1, delay: 1 }}
       >
         {barber.name}
       </motion.span>
@@ -56,7 +56,7 @@ const ShuffleCards = ({ setShowModal, setSelectedBarber }) => {
         className="text-lg italic text-center text-slate-400 "
         initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 1.4 }}
+        transition={{ duration: 1, delay: 1.4 }}
       >
         {barber.role}
       </motion.span>
@@ -64,7 +64,7 @@ const ShuffleCards = ({ setShowModal, setSelectedBarber }) => {
         className="mx-auto"
         initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 1.8 }}
+        transition={{ duration: 1, delay: 1.8 }}
       >
         <GradientShadowButton>
           <Link

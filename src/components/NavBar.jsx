@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { HashLink as Link } from 'react-router-hash-link';
+import { motion } from 'framer-motion';
 
 import logo from '../assets/logo/OnlyFades.png';
 
@@ -13,7 +14,18 @@ const navigation = [
 function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <header className="absolute inset-x-0 z-50 top-5">
+    <motion.header
+      className="absolute inset-x-0 z-50 top-5"
+      initial={{
+        opacity: 0,
+        y: 50,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: { duration: 1, delay: 0 },
+      }}
+    >
       <nav
         className="flex items-center justify-end mr-4 lg:px-8 lg:justify-center lg:mr-0"
         aria-label="Global"
@@ -82,7 +94,7 @@ function NavBar() {
           </div>
         </Dialog.Panel>
       </Dialog>
-    </header>
+    </motion.header>
   );
 }
 
