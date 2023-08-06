@@ -17,7 +17,7 @@ const ShuffleCards = ({ setShowModal, setSelectedBarber }) => {
       controls.start({
         opacity: 1,
         y: 0,
-        transition: { duration: 1, delay: 0.2 },
+        transition: { duration: 1, delay: 1},
       });
     }
   }, [controls, inView]);
@@ -30,7 +30,7 @@ const ShuffleCards = ({ setShowModal, setSelectedBarber }) => {
       className="h-[380px] w-[280px] sm:h-[450px] sm:w-[350px] grid  mx-auto  place-content-center space-y-6 rounded-2xl border-2 border-slate-700 bg-slate-800/20 p-6 shadow-xl backdrop-blur-md "
       initial={{
         opacity: 0,
-        y: 50,
+        y: 100,
       }}
       animate={controls}
     >
