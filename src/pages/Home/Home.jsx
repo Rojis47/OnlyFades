@@ -1,14 +1,14 @@
-import bgImage from '../../assets/images/else/bgimg.jpg';
+import bgImage from "../../assets/images/else/bgimg.jpg";
 
-import NavBar from '../../components/NavBar';
-import Contact from './Contact';
-import Footer from '../../components/Footer';
-import Barbers from './Barbers';
-import logo from '../../assets/logo/OnlyFades.png';
-import { motion } from 'framer-motion';
+import NavBar from "../../components/NavBar";
+import Contact from "./Contact";
+import Footer from "../../components/Footer";
+import Barbers from "./Barbers";
+import logo from "../../assets/logo/OnlyFades.png";
+import { motion } from "framer-motion";
 
-import { BrowserRouter } from 'react-router-dom';
-import { HashLink as Link } from 'react-router-hash-link';
+import { BrowserRouter } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Home() {
   return (
@@ -26,7 +26,7 @@ function Home() {
               className="absolute inset-0 -z-10 bg-gradient-to-r from-black via-transparent to-black"
               style={{
                 backgroundImage:
-                  'linear-gradient(to right, black 1%, transparent 50%, black 99%)',
+                  "linear-gradient(to right, black 1%, transparent 50%, black 99%)",
               }}
             ></div>
           }
@@ -60,7 +60,7 @@ function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 1 }}
               >
-                Expert Barbers Exceptional Results
+                Expert Barbershop Exceptional Results
               </motion.h1>
               <motion.p
                 className="mt-6 font-serif text-xl leading-8 text-gray-300"
@@ -68,7 +68,7 @@ function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 1.2 }}
               >
-                Quality cuts, experienced barbers, relaxed vibe. Experience a
+                Quality cuts, experienced barbershop, relaxed vibe. Experience a
                 fresh approach to men's grooming.
               </motion.p>
               <motion.div
