@@ -68,8 +68,8 @@ function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 1.2 }}
               >
-                Quality cuts, experienced barbershop, relaxed vibe. Experience a
-                fresh approach to men's grooming.
+                Quality cuts, razor shaves, relaxed vibe. Experience a new
+                approach to fresh Barbershop.
               </motion.p>
               <motion.div
                 className="flex flex-col items-center justify-center px-2 mt-10 gap-x-6"

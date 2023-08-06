@@ -41,7 +41,7 @@ export default function Barbers() {
           >
             We’re a barbershop with a dynamic group of individuals who are
             passionate about what we do and dedicated to delivering the best
-            results for our clients.
+            cuts and trims for our clients.
           </motion.p>
         </motion.div>
         <ul
