@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 
 import { BrowserRouter } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
+import ScrollingTestimonials from "../../components/ScrollingTestimonials";
 
 function Home() {
   return (
@@ -91,6 +92,7 @@ function Home() {
         <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
           <Barbers />
           <Contact />
+          <ScrollingTestimonials />
           <Footer />
         </div>
       </div>
