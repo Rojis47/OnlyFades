@@ -1,10 +1,10 @@
-import { Link } from 'react-router-dom';
-import { useInView } from 'react-intersection-observer';
-import { motion, useAnimation } from 'framer-motion';
-import barbers from '../components/picImports';
-import { CalendarIcon } from './icons';
-import GradientShadowButton from './GradientShadowButton';
-import { useEffect } from 'react';
+import { Link } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
+import barbers from "../components/picImports";
+import { CalendarIcon } from "./icons";
+import GradientShadowButton from "./GradientShadowButton";
+import { useEffect } from "react";
 
 const ShuffleCards = ({ setShowModal, setSelectedBarber }) => {
   const controls = useAnimation();
@@ -17,7 +17,7 @@ const ShuffleCards = ({ setShowModal, setSelectedBarber }) => {
       controls.start({
         opacity: 1,
         y: 0,
-        transition: { duration: 1, delay: 1},
+        transition: { duration: 1, delay: 1 },
       });
     }
   }, [controls, inView]);
@@ -42,7 +42,7 @@ const ShuffleCards = ({ setShowModal, setSelectedBarber }) => {
         }}
         src={barber.imageUrl}
         alt={`Image of `}
-        className="object-cover w-32 h-32 mx-auto transition ease-in-out border-2 rounded-full cursor-pointer border-slate-700 bg-slate-200"
+        className="object-cover aspect-[14/13] select-none  w-3/4 drop-shadow-3xl mx-auto transition ease-in-out border-2 rounded-2xl cursor-pointer border-white bg-slate-200"
       />
       <motion.span
         className="text-lg font-medium text-center text-indigo-400"

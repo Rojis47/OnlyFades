@@ -23,6 +23,21 @@ const jonathanPics = [
   jonathanPic10,
 ];
 
+import devinLogo from '../assets/images/devin/devin_logo.jpg';
+import devinPic1 from '../assets/images/devin/devin_pics (1).jpg';
+import devinPic2 from '../assets/images/devin/devin_pics (2).jpg';
+import devinPic3 from '../assets/images/devin/devin_pics (3).jpg';
+import devinPic4 from '../assets/images/devin/devin_pics (4).jpg';
+import devinPic5 from '../assets/images/devin/devin_pics (5).jpg';
+
+const devinPics = [
+  devinPic1,
+  devinPic2,
+  devinPic3,
+  devinPic4,
+  devinPic5,
+]
+
 import rubenPic1 from '../assets/images/ruben/ruben_pics (1).jpg';
 import rubenPic2 from '../assets/images/ruben/ruben_pics (2).jpg';
 import rubenPic3 from '../assets/images/ruben/ruben_pics (3).jpg';
@@ -231,6 +246,15 @@ const barbers = [
     bookUrl: '#',
     linkedinUrl: '#',
     pics: zayPics,
+  },  
+  {
+    name: 'Devin',
+    role: 'Barber',
+    imageUrl: devinLogo,
+    bookUrl:
+      'https://booksy.com/en-us/688099_rubyred-the-barber-onlyfades_barber-shop_37616_round-rock#ba_s=vl_1',
+    linkedinUrl: '#',
+    pics: devinPics,
   },
 
   {

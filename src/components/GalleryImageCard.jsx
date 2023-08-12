@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Blurhash } from 'react-blurhash';
+import { useState, useEffect } from "react";
+import { Blurhash } from "react-blurhash";
 
 const GalleryImageCard = ({ image, alt }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -14,7 +14,7 @@ const GalleryImageCard = ({ image, alt }) => {
 
   return (
     <>
-      <div style={{ display: imageLoaded ? 'none' : 'inline' }}>
+      <div style={{ display: imageLoaded ? "none" : "inline" }}>
         <Blurhash
           hash="hFCZz=o{J2%0E0S4aeadyZv-nLI]V?t7X7ob02H@xHSkr^s=jKofZfE1Ot?GofbbafWCIA-;%hI.slWTR%R*"
           width={150}
@@ -26,7 +26,7 @@ const GalleryImageCard = ({ image, alt }) => {
         />
       </div>
 
-      <div style={{ display: !imageLoaded ? 'none' : 'inline' }}>
+      <div style={{ display: !imageLoaded ? "none" : "inline" }}>
         <img
           src={image}
           alt={alt}
