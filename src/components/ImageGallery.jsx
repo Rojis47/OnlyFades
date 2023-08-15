@@ -1,4 +1,4 @@
-import GalleryImageCard from './GalleryImageCard';
+import GalleryImageCard from "./GalleryImageCard";
 
 function ImageGallery({ showModal, setShowModal, barber }) {
   return (
@@ -13,7 +13,7 @@ function ImageGallery({ showModal, setShowModal, barber }) {
             <div className="flex items-end justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
               <div>
                 <div
-                  style={{ width: '75vw', height: '80vh' }}
+                  style={{ width: "75vw", height: "80vh" }}
                   className="relative px-4 pb-4 overflow-auto text-left transition-all transform bg-[rgba(255,255,255,0.1)] rounded-lg scroll-bar shadow-xl backdrop-blur-lg bg-opacity-90 drop-shadow-2xl sm:my-8 sm:p-6 scrollbar"
                 >
                   <div className="sticky top-0 z-10 pt-4 text-white text-end">
