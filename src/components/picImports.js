@@ -23,7 +23,7 @@ const jonathanPics = [
   jonathanPic10,
 ];
 
-import rubenPic1 from '../assets/images/ruben/ruben_pics (1).jpg';
+import rubenPic1 from '../assets/images/ruben/ruben_logo.jpg';
 import rubenPic2 from '../assets/images/ruben/ruben_pics (2).jpg';
 import rubenPic3 from '../assets/images/ruben/ruben_pics (3).jpg';
 import rubenPic4 from '../assets/images/ruben/ruben_pics (4).jpg';
