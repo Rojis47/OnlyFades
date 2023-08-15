@@ -1,23 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Blurhash } from 'react-blurhash';
 
-const GalleryImageCards = ({ images, barberName }) => {
-  return (
-    <ul
-      role="list"
-      className="grid max-w-2xl grid-cols-1 mx-auto my-10 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
-    >
-      {images.map((image, i) => (
-        <GalleryImageCard
-          key={i}
-          image={image}
-          alt={`Image ${i + 1} for ${barberName}`}
-        />
-      ))}
-    </ul>
-  );
-};
-
 const GalleryImageCard = ({ image, alt }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -47,11 +30,11 @@ const GalleryImageCard = ({ image, alt }) => {
         <img
           src={image}
           alt={alt}
-          className="aspect-[14/13] select-none w-full drop-shadow-3xl lg:hover:scale-110 lg:transition lg:duration-500 lg:hover:drop-shadow-4xl object-cover rounded-xl"
+          className="aspect-[14/13] select-none w-full drop-shadow-3xl object-cover rounded-xl"
         />
       </div>
     </>
   );
 };
 
-export default GalleryImageCards;
+export default GalleryImageCard;

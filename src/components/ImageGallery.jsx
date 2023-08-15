@@ -1,4 +1,4 @@
-import GalleryImageCards from './GalleryImageCards';
+import GalleryImageCard from './GalleryImageCard';
 
 function ImageGallery({ showModal, setShowModal, barber }) {
   return (
@@ -35,12 +35,19 @@ function ImageGallery({ showModal, setShowModal, barber }) {
                     </button>
                   </div>
                   <div className="px-6 mx-auto max-w-7xl lg:px-8">
-                    <div className="px-6 mx-auto max-w-7xl lg:px-8">
-                      <GalleryImageCards
-                        images={barber.pics}
-                        barberName={barber.name}
-                      />
-                    </div>
+                    <ul
+                      role="list"
+                      className="grid max-w-2xl grid-cols-1 mx-auto my-10 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
+                    >
+                      {barber.pics.map((image, i) => (
+                        <GalleryImageCard
+                          key={i}
+                          image={image}
+                          alt={`Image ${i + 1} for ${barber.name}`}
+                          index={i}
+                        />
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>
