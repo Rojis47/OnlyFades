@@ -23,6 +23,8 @@ const jonathanPics = [
   jonathanPic10,
 ];
 
+import rubenLogo from '../assets/images/ruben/ruben_logo.jpg';
+
 import rubenPic1 from '../assets/images/ruben/ruben_pics (1).jpg';
 import rubenPic2 from '../assets/images/ruben/ruben_pics (2).jpg';
 import rubenPic3 from '../assets/images/ruben/ruben_pics (3).jpg';
@@ -79,6 +81,23 @@ const zayPics = [
   zayPic6,
   zayPic7,
   zayPic8,
+];
+
+import devinLogo from '../assets/images/devin/devin_logo.jpg';
+
+import devinPic1 from '../assets/images/devin/devin_pics (1).jpg';
+import devinPic2 from '../assets/images/devin/devin_pics (2).jpg';
+import devinPic3 from '../assets/images/devin/devin_pics (3).jpg';
+import devinPic4 from '../assets/images/devin/devin_pics (4).jpg';
+import devinPic5 from '../assets/images/devin/devin_pics (5).jpg';
+
+const devinPics = [
+  devinPic1,
+  devinPic2,
+  devinPic3,
+  devinPic4,
+  devinPic5,
+
 ];
 
 import marcosLogo from '../assets/images/marcos/marcos_logo.jpg';
@@ -198,6 +217,15 @@ const barbers = [
     pics: mannyPics,
   },
   {
+    name: 'Ruby',
+    role: 'Barber',
+    imageUrl: rubyLogo,
+    bookUrl:
+      'https://booksy.com/en-us/688099_rubyred-the-barber-onlyfades_barber-shop_37616_round-rock#ba_s=vl_1',
+    linkedinUrl: '#',
+    pics: rubyPics,
+  },
+  {
     name: 'Jona The Barber',
     role: 'Barber',
     imageUrl: jonathanLogo,
@@ -209,7 +237,7 @@ const barbers = [
   {
     name: 'RubenCutz',
     role: 'Barber',
-    imageUrl: rubenPic1,
+    imageUrl: rubenLogo,
     bookUrl:
       'https://booksy.com/en-us/19778_ruben-cutz_barber-shop_37616_round-rock#ba_s=vl_1',
     linkedinUrl: '#',
@@ -232,15 +260,14 @@ const barbers = [
     linkedinUrl: '#',
     pics: zayPics,
   },
-
   {
-    name: 'Ruby',
+    name: 'Devin',
     role: 'Barber',
-    imageUrl: rubyLogo,
+    imageUrl: devinLogo,
     bookUrl:
-      'https://booksy.com/en-us/688099_rubyred-the-barber-onlyfades_barber-shop_37616_round-rock#ba_s=vl_1',
+      'https://booksy.com/en-us/688099_devinred-the-barber-onlyfades_barber-shop_37616_round-rock#ba_s=vl_1',
     linkedinUrl: '#',
-    pics: rubyPics,
+    pics: devinPics,
   },
   {
     name: 'Angel',
