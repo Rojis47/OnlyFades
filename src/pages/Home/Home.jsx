@@ -4,7 +4,7 @@ import NavBar from '../../components/NavBar';
 import Contact from './Contact';
 import Footer from '../../components/Footer';
 import Barbers from './Barbers';
-import logo from '../../assets/logo/OnlyFades.png';
+import logo from '../../../public/OnlyFades.png';
 import { motion } from 'framer-motion';
 
 import { BrowserRouter } from 'react-router-dom';
