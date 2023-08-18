@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 const ShuffleCards = ({ setShowModal, setSelectedBarber }) => {
   const controls = useAnimation();
   const { ref, inView } = useInView({
-    threshold: 0.1,
+    threshold: 0.5,
   });
 
   useEffect(() => {
