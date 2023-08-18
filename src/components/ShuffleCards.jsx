@@ -1,39 +1,16 @@
 import { Link } from 'react-router-dom';
-import { useInView } from 'react-intersection-observer';
-import { motion, useAnimation } from 'framer-motion';
+
 import barbers from '../components/picImports';
 import { CalendarIcon } from './icons';
 import GradientShadowButton from './GradientShadowButton';
-import { useEffect } from 'react';
 
 const ShuffleCards = ({ setShowModal, setSelectedBarber }) => {
-  const controls = useAnimation();
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-  });
-
-  useEffect(() => {
-    if (inView) {
-      controls.start({
-        opacity: 1,
-        y: 0,
-        transition: { duration: 1, delay: 2 },
-      });
-    }
-  }, [controls, inView]);
-
   return barbers.map((barber, index) => (
-    <motion.div
-      ref={index === 0 ? ref : null}
+    <div
       key={barber.name}
       className="h-[380px] w-[280px] sm:h-[450px] sm:w-[350px] grid  mx-auto  place-content-center space-y-6 rounded-2xl border-2 border-slate-700 bg-slate-800/20 p-6 shadow-xl backdrop-blur-md "
-      initial={{
-        opacity: 0,
-        y: 100,
-      }}
-      animate={controls}
     >
-      <motion.img
+      <img
         onClick={() => {
           setSelectedBarber(barber);
           setShowModal(true);
@@ -42,28 +19,13 @@ const ShuffleCards = ({ setShowModal, setSelectedBarber }) => {
         alt={`Image of `}
         className="object-cover aspect-[14/13] select-none  w-3/4 drop-shadow-3xl mx-auto transition ease-in-out border-2 rounded-2xl cursor-pointer border-white bg-slate-200"
       />
-      <motion.span
-        className="text-lg font-medium text-center text-indigo-400"
-        initial={{ opacity: 0, y: 25 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 1 }}
-      >
+      <span className="text-lg font-medium text-center text-indigo-400">
         {barber.name}
-      </motion.span>
-      <motion.span
-        className="text-lg italic text-center text-slate-400 "
-        initial={{ opacity: 0, y: 25 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 1.4 }}
-      >
+      </span>
+      <span className="text-lg italic text-center text-slate-400 ">
         {barber.role}
-      </motion.span>
-      <motion.span
-        className="mx-auto"
-        initial={{ opacity: 0, y: 25 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 1.8 }}
-      >
+      </span>
+      <span className="mx-auto">
         <GradientShadowButton>
           <Link
             to={barber.bookUrl}
@@ -83,8 +45,8 @@ const ShuffleCards = ({ setShowModal, setSelectedBarber }) => {
             </svg>
           </Link>
         </GradientShadowButton>
-      </motion.span>
-    </motion.div>
+      </span>
+    </div>
   ));
 };
 
