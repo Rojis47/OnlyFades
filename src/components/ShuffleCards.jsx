@@ -1,15 +1,15 @@
-import { Link } from "react-router-dom";
-import { useInView } from "react-intersection-observer";
-import { motion, useAnimation } from "framer-motion";
-import barbers from "../components/picImports";
-import { CalendarIcon } from "./icons";
-import GradientShadowButton from "./GradientShadowButton";
-import { useEffect } from "react";
+import { Link } from 'react-router-dom';
+import { useInView } from 'react-intersection-observer';
+import { motion, useAnimation } from 'framer-motion';
+import barbers from '../components/picImports';
+import { CalendarIcon } from './icons';
+import GradientShadowButton from './GradientShadowButton';
+import { useEffect } from 'react';
 
 const ShuffleCards = ({ setShowModal, setSelectedBarber }) => {
   const controls = useAnimation();
   const { ref, inView } = useInView({
-    threshold: 0.1, // Trigger the animation when the element is 10% in view
+    threshold: 0.1,
   });
 
   useEffect(() => {
@@ -24,7 +24,6 @@ const ShuffleCards = ({ setShowModal, setSelectedBarber }) => {
 
   return barbers.map((barber, index) => (
     <motion.div
-      // Attach ref only to the first barber to trigger animation
       ref={index === 0 ? ref : null}
       key={barber.name}
       className="h-[380px] w-[280px] sm:h-[450px] sm:w-[350px] grid  mx-auto  place-content-center space-y-6 rounded-2xl border-2 border-slate-700 bg-slate-800/20 p-6 shadow-xl backdrop-blur-md "
@@ -38,7 +37,6 @@ const ShuffleCards = ({ setShowModal, setSelectedBarber }) => {
         onClick={() => {
           setSelectedBarber(barber);
           setShowModal(true);
-          //   console.log('Image was clicked');
         }}
         src={barber.imageUrl}
         alt={`Image of `}

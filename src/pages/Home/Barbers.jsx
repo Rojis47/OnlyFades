@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import '../../index.css';
-import ImageCard from '../../components/ImageCard';
 import ImageGallery from '../../components/ImageGallery';
 import ShuffleCards from '../../components/ShuffleCards';
 import { motion } from 'framer-motion';
