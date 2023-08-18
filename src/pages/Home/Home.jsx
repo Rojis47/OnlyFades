@@ -1,15 +1,15 @@
-import bgImage from "../../assets/images/else/bgimg.jpg";
+import bgImage from '../../assets/images/else/bgimg.jpg';
 
-import NavBar from "../../components/NavBar";
-import Contact from "./Contact";
-import Footer from "../../components/Footer";
-import Barbers from "./Barbers";
-import logo from "../../assets/logo/OnlyFades.png";
-import { motion } from "framer-motion";
+import NavBar from '../../components/NavBar';
+import Contact from './Contact';
+import Footer from '../../components/Footer';
+import Barbers from './Barbers';
+import logo from '../../assets/logo/OnlyFades.png';
+import { motion } from 'framer-motion';
 
-import { BrowserRouter } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link";
-import ScrollingTestimonials from "../../components/ScrollingTestimonials";
+import { BrowserRouter } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+import ScrollingTestimonials from '../../components/ScrollingTestimonials';
 
 function Home() {
   return (
@@ -27,7 +27,7 @@ function Home() {
               className="absolute inset-0 -z-10 bg-gradient-to-r from-black via-transparent to-black"
               style={{
                 backgroundImage:
-                  "linear-gradient(to right, black 1%, transparent 50%, black 99%)",
+                  'linear-gradient(to right, black 1%, transparent 50%, black 99%)',
               }}
             ></div>
           }
@@ -92,7 +92,7 @@ function Home() {
         <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
           <Barbers />
           <Contact />
-          <ScrollingTestimonials />
+          {/* <ScrollingTestimonials /> */}
           <Footer />
         </div>
       </div>
