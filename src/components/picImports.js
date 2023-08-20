@@ -258,7 +258,7 @@ const barbers = [
     role: 'Barber',
     imageUrl: devinLogo,
     bookUrl:
-      'https://booksy.com/en-us/688099_rubyred-blends_barber-shop_37616_round-rock#ba_s=vl_1',
+      'https://booksy.com/en-us/965229_premier-blendz_barber-shop_37616_round-rock#ba_s=sh_1',
     linkedinUrl: '#',
     pics: devinPics,
   },
