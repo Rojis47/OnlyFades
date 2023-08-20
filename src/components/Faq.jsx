@@ -34,7 +34,7 @@ const faqs = [
 
 function Faq() {
   return (
-    <div className="bg-gray-900">
+    <div id="faq" className="bg-gray-900">
       <div className="px-6 py-16 mx-auto max-w-7xl sm:py-24 lg:px-8">
         <h2 className="text-2xl font-bold leading-10 tracking-tight text-white">
           Frequently asked questions

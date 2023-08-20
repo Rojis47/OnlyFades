@@ -9,6 +9,7 @@ import logo from '../assets/logo/OnlyFades.png';
 const navigation = [
   { name: 'Our Barbers', href: '#Barbers' },
   { name: 'Contact Us', href: '#Contact' },
+  { name: 'Faq', href: '#faq' },
 ];
 
 function NavBar() {
