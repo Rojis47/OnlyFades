@@ -4,7 +4,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { HashLink as Link } from 'react-router-hash-link';
 import { motion } from 'framer-motion';
 
-import logo from '../../public/OnlyFades.png';
+import logo from '../assets/logo/OnlyFades.png';
 
 const navigation = [
   { name: 'Our Barbers', href: '#Barbers' },

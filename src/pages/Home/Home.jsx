@@ -4,12 +4,13 @@ import NavBar from '../../components/NavBar';
 import Contact from './Contact';
 import Footer from '../../components/Footer';
 import Barbers from './Barbers';
-import logo from '../../../public/OnlyFades.png';
+import logo from '../../assets/logo/OnlyFades.png';
 import { motion } from 'framer-motion';
 
 import { BrowserRouter } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import ScrollingTestimonials from '../../components/ScrollingTestimonials';
+import Faq from '../../components/Faq';
 
 function Home() {
   return (
@@ -93,6 +94,7 @@ function Home() {
           <Barbers />
           <Contact />
           {/* <ScrollingTestimonials /> */}
+          <Faq />
           <Footer />
         </div>
       </div>
