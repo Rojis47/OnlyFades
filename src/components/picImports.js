@@ -91,14 +91,7 @@ import devinPic3 from '../assets/images/devin/devin_pics (3).jpg';
 import devinPic4 from '../assets/images/devin/devin_pics (4).jpg';
 import devinPic5 from '../assets/images/devin/devin_pics (5).jpg';
 
-const devinPics = [
-  devinPic1,
-  devinPic2,
-  devinPic3,
-  devinPic4,
-  devinPic5,
-
-];
+const devinPics = [devinPic1, devinPic2, devinPic3, devinPic4, devinPic5];
 
 import marcosLogo from '../assets/images/marcos/marcos_logo.jpg';
 
@@ -265,7 +258,7 @@ const barbers = [
     role: 'Barber',
     imageUrl: devinLogo,
     bookUrl:
-      'https://booksy.com/en-us/688099_devinred-the-barber-onlyfades_barber-shop_37616_round-rock#ba_s=vl_1',
+      'https://booksy.com/en-us/688099_rubyred-blends_barber-shop_37616_round-rock#ba_s=vl_1',
     linkedinUrl: '#',
     pics: devinPics,
   },
