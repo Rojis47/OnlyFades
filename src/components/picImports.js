@@ -163,6 +163,13 @@ const mannyPics = [
   mannyPic10,
 ];
 
+import francoLogo from '../assets/images/franco/franco_logo.jpg';
+
+import francoPic1 from '../assets/images/franco/franco_pics (1).jpg';
+import francoPic2 from '../assets/images/franco/franco_pics (2).jpg';
+
+const francoPics = [francoPic1, francoPic2];
+
 import skoobaLogo from '../assets/images/skooba/skooba_logo.jpg';
 
 import skoobaPic1 from '../assets/images/skooba/skooba_pics (1).jpg';
@@ -237,7 +244,7 @@ const barbers = [
     pics: rubenPics,
   },
   {
-    name: 'Mehdi',
+    name: 'Mehdi Da Barber',
     role: 'Barber',
     imageUrl: mehdiLogo,
     bookUrl:
@@ -246,10 +253,20 @@ const barbers = [
     pics: mehdiPics,
   },
   {
+    name: 'Zayded Blendz',
+    role: 'Barber',
+    imageUrl: francoLogo,
+    bookUrl:
+      'https://booksy.com/en-us/476867_zayded-blendz_barber-shop_37616_round-rock#ba_s=sh_1',
+    linkedinUrl: '#',
+    pics: francoPics,
+  },
+  {
     name: 'Zay',
     role: 'Barber',
     imageUrl: zayLogo,
-    bookUrl: '#',
+    bookUrl:
+      'https://booksy.com/en-us/476867_zayded-blendz_barber-shop_37616_round-rock#ba_s=sh_1',
     linkedinUrl: '#',
     pics: zayPics,
   },
