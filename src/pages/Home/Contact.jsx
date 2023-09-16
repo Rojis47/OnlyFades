@@ -12,12 +12,12 @@ const contactInfo = [
     icon: BuildingOffice2Icon,
     value: '1320 N Interstate Hwy 35 \n Round Rock, TX 78681',
   },
-  {
-    label: 'Telephone',
-    icon: PhoneIcon,
-    value: '+1 (555) 555-5555',
-    link: 'tel:#',
-  },
+  // {
+  //   label: 'Telephone',
+  //   icon: PhoneIcon,
+  //   value: '+1 (555) 555-5555',
+  //   link: 'tel:#',
+  // },
   {
     label: 'Email',
     icon: EnvelopeIcon,
